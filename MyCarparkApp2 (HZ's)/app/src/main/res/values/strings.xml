@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">MyCarParkApp2</string>
+    <string name="current_location">My Current Location</string>
+</resources>

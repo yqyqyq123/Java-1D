@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".EditCarParkConfiguration">
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <LinearLayout
+
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:dividerPadding="9px">
+
+        <EditText
+            android:layout_marginTop="20dp"
+            android:id="@+id/editTextValue"
+            android:hint="Price/hr: "
+            android:gravity="center"
+            android:inputType="numberDecimal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginTop="30dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        android:dividerPadding="9px">
+
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:background="@drawable/button_selector"
+            android:text="SLOT 1" />
+
+        <Button
+
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 2" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 3" />
+
+        <Button
+
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 4" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 5" />
+
+        <Button
+
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 7" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 9" />
+
+        <Button
+            android:layout_width="250dp"
+            android:layout_height="100dp"
+            android:text="SLOT 10" />
+
+    </LinearLayout>
+
+</LinearLayout>
+
+
+
