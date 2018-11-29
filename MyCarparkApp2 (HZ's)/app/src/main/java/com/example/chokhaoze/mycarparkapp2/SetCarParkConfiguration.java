@@ -13,6 +13,8 @@ import android.widget.Button;
 public class SetCarParkConfiguration extends AppCompatActivity {
 
     Button buttonCarPark1;
+    Button buttonCarPark2;
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -32,7 +34,18 @@ public class SetCarParkConfiguration extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        buttonCarPark2 = findViewById(R.id.buttonCarPark2);
+        buttonCarPark2.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetCarParkConfiguration.this , EditCarPark2Configuration.class);//links MainActivity to SubActivity
+                //the "back" arrow appears on the SubActivity because SubActivity is tied to MainActivity  in the Manifest Page
+                startActivity(intent);
+            }
+        });
     }
+
 
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.menu_main, menu);

@@ -8,4 +8,11 @@
         layout="@layout/toolbar">
     </include>
 
+    <ImageView
+        android:id="@+id/sutdmap"
+        android:layout_width="match_parent"
+        android:layout_height="900dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/sutdmap" />
+
 </android.support.constraint.ConstraintLayout>

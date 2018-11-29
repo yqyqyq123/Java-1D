@@ -26,7 +26,11 @@
         </activity>
         <activity android:name=".EditCarParkConfiguration"
             android:parentActivityName=".SetCarParkConfiguration"
-            android:label=" Edit Car Park Configuration ">
+            android:label=" Edit Car Park 1 Configuration ">
+        </activity>
+        <activity android:name=".EditCarPark2Configuration"
+            android:parentActivityName=".SetCarParkConfiguration"
+            android:label=" Edit Car Park 2 Configuration ">
         </activity>
     </application>
 

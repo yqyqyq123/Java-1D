@@ -11,20 +11,33 @@
         layout="@layout/toolbar">
     </include>
 
+    <ImageView
+        android:id="@+id/sutdmap"
+        android:layout_width="match_parent"
+        android:layout_height="1000dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/googlemapblackwhite" />
+
+    <ImageView
+        android:id="@+id/parkingicon"
+        android:layout_width="match_parent"
+        android:paddingTop="200dp"
+        android:layout_height="650dp"
+        android:src="@drawable/parkingicon" />
+
     <TextView
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to My Car Park App!"
-        app:layout_constraintBottom_toBottomOf="parent"
+        android:paddingTop="650dp"
         app:layout_constraintLeft_toLeftOf="parent"
-        app:layout_constraintRight_toRightOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintRight_toRightOf="parent" />
 
     <Button
         android:id="@+id/buttonStart"
-        android:layout_width="292dp"
-        android:layout_height="wrap_content"
-        android:text="Start!"
+        android:layout_width="300dp"
+        android:layout_height="100dp"
+        android:text="Get Directions !"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"

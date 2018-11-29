@@ -45,6 +45,12 @@ public class MainActivity extends AppCompatActivity {
             return true;
         }
 
+        if (id == R.id.set_carpark_configuration){
+            Intent intent = new Intent(this, SetCarParkConfiguration.class);
+            startActivity(intent);
+            return true;//method signature needs boolean as a return when the action is completed successfully
+        }
+
         /*if (id == R.id.menu_set_exchange_rate){//code brings user to SubActivity
             Intent intent = new Intent(this, SubActivity.class);
             startActivity(intent);
