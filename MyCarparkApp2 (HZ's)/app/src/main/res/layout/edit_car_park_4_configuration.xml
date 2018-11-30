@@ -1,0 +1,325 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".EditCarPark4Configuration">
+
+
+    <include
+        android:id="@+id/toolbar"
+        layout="@layout/toolbar">
+    </include>
+
+    <ImageView
+        android:id="@+id/carparklayout7"
+        android:layout_width="match_parent"
+        android:layout_height="700dp"
+        android:paddingLeft="10dp"
+        android:paddingTop="150dp"
+        android:scaleType="centerCrop"
+        android:src="@drawable/carparklayout7" />
+
+    <LinearLayout
+        android:layout_width="300dp"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="650dp"
+        android:dividerPadding="9px"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.499">
+
+        <EditText
+            android:id="@+id/editTextValue"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:gravity="center"
+            android:hint="Price/hr: "
+            android:inputType="numberDecimal" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="540dp"
+        android:dividerPadding="9px"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <TextView
+            android:id="@+id/textViewCount"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="300dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonSlot20"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT20" />
+
+
+        <Button
+            android:id="@+id/buttonSlot19"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT19" />
+
+        <Button
+            android:id="@+id/buttonSlot17"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT17" />
+
+        <Button
+            android:id="@+id/buttonSlot14"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT14" />
+
+        <Button
+            android:id="@+id/buttonSlot10"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT10" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/linearLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="145dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+        <Button
+            android:id="@+id/buttonSlot18"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT18" />
+
+
+        <Button
+            android:id="@+id/buttonSlot16"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT16" />
+
+        <Button
+            android:id="@+id/buttonSlot13"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT13" />
+
+        <Button
+            android:id="@+id/buttonSlot9"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT9" />
+
+
+        <Button
+            android:id="@+id/buttonSlot6"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT6" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="90dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonSlot15"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT15" />
+
+
+        <Button
+            android:id="@+id/buttonSlot12"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT12" />
+
+        <Button
+            android:id="@+id/buttonSlot8"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT8" />
+
+        <Button
+            android:id="@+id/buttonSlot5"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT5" />
+
+        <Button
+            android:id="@+id/buttonSlot3"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT3" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonSlot11"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT11" />
+
+
+        <Button
+            android:id="@+id/buttonSlot7"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT7" />
+
+        <Button
+            android:id="@+id/buttonSlot4"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT4" />
+
+        <Button
+            android:id="@+id/buttonSlot2"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:layout_marginRight="0.8dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT2" />
+
+        <Button
+            android:id="@+id/buttonSlot1"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:background="@drawable/button_unselector"
+            android:text="SLOT1" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="98dp"
+        android:layout_marginTop="630dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent">
+
+
+        <Button
+            android:id="@+id/buttonSaveConfig"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="45dp"
+            android:background="#00c3ff"
+            android:text="Save" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="285dp"
+        android:orientation="horizontal"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintLeft_toLeftOf="parent"
+        app:layout_constraintRight_toRightOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_bias="0.968">
+
+        <Button
+            android:id="@+id/buttonResetConfig"
+            android:layout_width="400dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="10dp"
+            android:background="#00c3ff"
+            android:text="Reset" />
+
+    </LinearLayout>
+
+</android.support.constraint.ConstraintLayout>
+
+
+

@@ -44,7 +44,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot1.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot1.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 1 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -55,7 +55,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot2.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot2.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot2.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 2 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -65,7 +65,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot3.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot3.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot3.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 3 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -75,7 +75,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot4.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot4.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot4.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 4 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -85,7 +85,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot5.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot5.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot5.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 5 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -95,7 +95,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot6.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot6.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot6.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 6 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -105,7 +105,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot7.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot7.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot7.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 7 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -115,7 +115,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot8.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot8.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot8.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 8 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -125,7 +125,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot9.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot9.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot9.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 9 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -135,7 +135,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSlot10.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSlot10.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSlot10.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarParkConfiguration.this,"Slot 10 Selected", Toast.LENGTH_SHORT).show();
                 count += 1;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count) + "/10");
@@ -145,7 +145,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonSaveConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                buttonSaveConfig.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
+                buttonSaveConfig.setBackgroundResource(R.drawable.button_unselector);
                 Toast.makeText(EditCarParkConfiguration.this,"Saving...", Toast.LENGTH_SHORT).show();
                 Intent intent = new Intent(EditCarParkConfiguration.this , SetCarParkConfiguration.class);//links MainActivity to SubActivity
                 startActivity(intent);
@@ -156,18 +156,17 @@ public class EditCarParkConfiguration extends AppCompatActivity {
         buttonResetConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                //buttonResetConfig.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_selector));
                 Toast.makeText(EditCarParkConfiguration.this,"Reseting...", Toast.LENGTH_SHORT).show();
-                buttonSlot1.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot2.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot3.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot4.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot5.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot6.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot7.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot8.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot9.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
-                buttonSlot10.setBackgroundDrawable(getResources().getDrawable(R.drawable.button_unselector));
+                buttonSlot1.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot2.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot3.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot4.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot5.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot6.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot7.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot8.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot9.setBackgroundResource(R.drawable.button_unselector);
+                buttonSlot10.setBackgroundResource(R.drawable.button_unselector);
                 count = 0;
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count));
             }

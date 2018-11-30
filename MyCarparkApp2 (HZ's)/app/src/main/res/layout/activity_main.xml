@@ -12,7 +12,7 @@
     </include>
 
     <ImageView
-        android:id="@+id/sutdmap"
+        android:id="@+id/googlemapblackwhite"
         android:layout_width="match_parent"
         android:layout_height="1000dp"
         android:scaleType="centerCrop"
@@ -29,7 +29,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Welcome to My Car Park App!"
-        android:paddingTop="650dp"
+        android:paddingTop="680dp"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent" />
 
