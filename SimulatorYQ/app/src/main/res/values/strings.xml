@@ -1,0 +1,25 @@
+<resources>
+    <string name="app_name">ParkingAndroidapp</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_parking_list">ParkingListActivity</string>
+    <string name="section_format">Hello World from section: %1$d</string>
+    <string name="title_activity_fragment_map">Map</string>
+    <string name="title_activity_fragment_filter">Filter</string>
+    <string name="title_activity_fragment_list">List</string>
+    <string name="title_activity_fragment_parking_map">Map</string>
+    <string name="marker_demo_label">Markers</string>
+    <string name="marker_close_info_window_on_retap_demo_label">Marker Close Info Window on Retap</string>
+    <string name="marker_close_info_window_on_retap_demo_description">Demonstrates how to close the info window when the currently selected marker is retapped.</string>
+    <string name="marker_demo_description">Demonstrates how to add Markers to a map.</string>
+    <string name="custom_info_contents">Custom info contents</string>
+    <string name="custom_info_window">Custom info window</string>
+    <string name="default_info_window">Default info window</string>
+    <string name="clear_map">Clear</string>
+    <string name="reset_map">Reset</string>
+    <string name="drag_melbourne">Drag Melbourne</string>
+    <string name="flat">Flat</string>
+    <string name="rotation">Rotation:</string>
+    <string name="map_not_ready">Map is not ready yet</string>
+    <string name="current_location">My Current Location</string>
+
+    </resources>
