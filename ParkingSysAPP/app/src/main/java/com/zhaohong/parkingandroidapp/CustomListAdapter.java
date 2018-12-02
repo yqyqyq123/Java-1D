@@ -1,4 +1,4 @@
-package com.chris.parkingandroidapp;
+package com.zhaohong.parkingandroidapp;
 
 import android.app.Activity;
 import android.view.LayoutInflater;

@@ -14,7 +14,7 @@
  * limitations under the License.
  */
 
-package com.chris.parkingandroidapp;
+package com.zhaohong.parkingandroidapp;
 
 import android.annotation.SuppressLint;
 import android.os.Build;

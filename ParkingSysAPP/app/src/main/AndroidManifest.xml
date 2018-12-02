@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.chris.parkingandroidapp">
+    package="com.zhaohong.parkingandroidapp">
 
     <!--
          The ACCESS_COARSE/FINE_LOCATION permissions are not required to use
@@ -33,14 +33,10 @@
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
 
-        <activity
-            android:name=".MainActivity1stpage"
-            android:label="@string/app_name"
-            android:theme="@style/AppTheme.NoActionBar">
-        </activity>
+
 
         <activity
-            android:name=".RegistrationActivity"
+            android:name=".MainActivity1stpage"
             android:label="@string/app_name"
             android:theme="@style/AppTheme.NoActionBar">
             <intent-filter>
@@ -50,20 +46,25 @@
         </activity>
 
         <activity
-            android:name=".ParkingInfoActivity"
-            android:label="@string/title_activity_parking_list"
-            android:theme="@style/AppTheme.NoActionBar" />
-
-        <activity
-            android:name=".fragmentList"
-            android:label="@string/title_activity_fragment_list" />
-        <activity
             android:name=".MarkerDemoActivity"
             android:label="@string/marker_demo_label"/>
+
+        <activity android:name=".Location2Activity"
+            android:label="inside"
+            android:parentActivityName=".MainActivity1stpage"/>
+
+        <activity android:name=".Insideparking"
+            android:label="insideparking"
+            android:parentActivityName=".MainActivity1stpage"/>
+        <activity android:name=".DrawPath"
+            android:label="pathexample"
+            android:parentActivityName=".Insideparking"/>
+
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"
             android:value="@string/google_maps_key" />
+
 
     </application>
 

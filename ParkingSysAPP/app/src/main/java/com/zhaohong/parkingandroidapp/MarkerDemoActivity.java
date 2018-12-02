@@ -14,10 +14,11 @@
  * limitations under the License.
  */
 
-package com.chris.parkingandroidapp;
+package com.zhaohong.parkingandroidapp;
 
 import org.json.JSONObject;
 
+import android.content.Intent;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Color;
@@ -35,6 +36,7 @@ import android.text.style.ForegroundColorSpan;
 import android.view.View;
 import android.view.animation.BounceInterpolator;
 import android.view.animation.Interpolator;
+import android.widget.Button;
 import android.widget.CheckBox;
 import android.widget.ImageView;
 import android.widget.RadioGroup;
@@ -171,6 +173,9 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     private Marker mCarpark2;
 
     private Marker mCurrent;
+    private Marker mCurrentnow;
+
+    private Marker clickmark;
     ArrayList<LatLng> mmPoints;
 
     /**
@@ -303,6 +308,20 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         mMap.clear();
         addMarkersToMap();
     }
+
+    public void onArrive(View view){
+        if(!checkReady()){
+            return;
+        }
+        if(clickmark!=null){
+            Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+            Log.i("zh","button3");
+            startActivity(intent);
+
+        }
+
+    }
+
 
     private String getDirectionsUrl(LatLng origin,LatLng dest){
 
@@ -483,17 +502,20 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
+        clickmark = null;
         LatLng origin=currentLocation;
         LatLng dest;
         String url;
         DownloadTask downloadTask;
         if (marker.equals(mCarpark1)) {
+            clickmark = mCarpark1;
             dest=carpark1;
             url = getDirectionsUrl(origin, dest);
             downloadTask = new DownloadTask();
             downloadTask.execute(url);
             Log.i("zhaohong","here1");
         }else if(marker.equals(mCarpark2)){
+            clickmark = mCarpark2;
             dest=carpark2;
             url = getDirectionsUrl(origin, dest);
             downloadTask = new DownloadTask();
@@ -513,23 +535,5 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         // marker is centered and for the marker's info window to open, if it has one).
         return false;
     }
-    /*
-    @Override
-    public void onInfoWindowClick(Marker marker) {
-        Toast.makeText(this, "Click Info Window", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onInfoWindowClose(Marker marker) {
-        //Toast.makeText(this, "Close Info Window", Toast.LENGTH_SHORT).show();
-    }
-
-    @Override
-    public void onInfoWindowLongClick(Marker marker) {
-        Toast.makeText(this, "Info Window long click", Toast.LENGTH_SHORT).show();
-    }*/
-
-
-
 
 }

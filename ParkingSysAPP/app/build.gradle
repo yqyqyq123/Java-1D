@@ -4,7 +4,7 @@ android {
     compileSdkVersion 26
     buildToolsVersion "26.0.1"
     defaultConfig {
-        applicationId "com.chris.parkingandroidapp"
+        applicationId "com.zhaohong.parkingandroidapp"
         minSdkVersion 19
         targetSdkVersion 22
         versionCode 1

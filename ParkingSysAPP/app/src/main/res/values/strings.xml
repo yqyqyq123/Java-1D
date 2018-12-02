@@ -20,6 +20,17 @@
     <string name="flat">Flat</string>
     <string name="rotation">Rotation:</string>
     <string name="map_not_ready">Map is not ready yet</string>
+    <string name="arrive">Arrive</string>
+    <string name="pick_slot">Pick a Slot</string>
+    <string name="available">Available</string>
+    <string name="booked">Booked</string>
+    <string name="proceed_btn">Proceed</string>
+    <string name="enter_your_details">Enter your details</string>
+    <string name="name">Name</string>
+    <string name="vehicle_no">vehicle number</string>
+    <string name="time_slot">time slot</string>
+    <string name="to">to</string>
+    <string name="book_slot">book slot</string>
 
 
     </resources>

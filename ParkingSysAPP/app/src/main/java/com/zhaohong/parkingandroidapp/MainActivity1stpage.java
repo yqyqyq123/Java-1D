@@ -1,4 +1,4 @@
-package com.chris.parkingandroidapp;
+package com.zhaohong.parkingandroidapp;
 
 import android.content.Intent;
 import android.os.Bundle;
@@ -16,36 +16,27 @@ import java.util.ArrayList;
 
 public class MainActivity1stpage extends AppCompatActivity {
 
+
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
+        setContentView(R.layout.content_main_activity1stpage);
 
-        setContentView(R.layout.intro_activity);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
 
-        Button findParking = (Button) findViewById(R.id.findParking);
-        findParking.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Log.i("--parking new class-" , "button clicked !!!!!!!");
-                launchNextPage();
-            }
-        });
-        Button button2 = (Button) findViewById(R.id.button2);
+
+        Button button2 = (Button) findViewById(R.id.buttonStart);
         button2.setOnClickListener(new View.OnClickListener() {
             @Override
-            public void onClick(View view) {
-                Intent intent = new Intent(MainActivity1stpage.this,MarkerDemoActivity.class);
+            public void onClick(View v) {
+                Intent intent = new Intent(MainActivity1stpage. this , MarkerDemoActivity.class);
                 startActivity(intent);
             }
         });
     }
-    public void launchNextPage ()
-    {
-        Intent intent = new Intent(this, ParkingInfoActivity.class) ;
-        startActivity(intent);
-    }
+
 
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
