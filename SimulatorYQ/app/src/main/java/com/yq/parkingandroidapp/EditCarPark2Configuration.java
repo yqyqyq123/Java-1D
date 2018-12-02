@@ -37,8 +37,8 @@ public class EditCarPark2Configuration extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.edit_car_park_4_configuration);
 
-        for(int i = 0; i < 21; i++){
-            carparkConfig2.put(Integer.toString(200+i), 0);
+        for(int i = 1; i < 21; i++){
+            carparkConfig2.put(Integer.toString(i), 1);
         }
         final EditText price2Text = (EditText) findViewById(R.id.price2);
         Toolbar toolbar = findViewById(R.id.toolbar);
@@ -75,7 +75,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot1.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 1 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("201",1);
+                carparkConfig2.put("1",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
 
@@ -87,7 +87,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot2.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 2 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("202",1);
+                carparkConfig2.put("2",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -98,7 +98,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot3.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 3 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("203",1);
+                carparkConfig2.put("3",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -109,7 +109,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot4.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 4 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("204",1);
+                carparkConfig2.put("4",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -120,7 +120,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot5.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 5 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("205",1);
+                carparkConfig2.put("5",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -131,7 +131,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot6.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 6 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("206",1);
+                carparkConfig2.put("6",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -142,7 +142,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot7.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 7 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("207",1);
+                carparkConfig2.put("7",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -153,7 +153,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot8.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 8 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("208",1);
+                carparkConfig2.put("8",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -164,7 +164,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot9.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 9 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("209",1);
+                carparkConfig2.put("9",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -175,7 +175,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot10.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 10 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("210",1);
+                carparkConfig2.put("10",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -186,7 +186,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot11.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 11 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("211",1);
+                carparkConfig2.put("11",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
 
@@ -198,7 +198,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot12.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 12 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("212",1);
+                carparkConfig2.put("12",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -209,7 +209,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot13.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 13 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("213",1);
+                carparkConfig2.put("13",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -220,7 +220,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot14.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 14 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("214",1);
+                carparkConfig2.put("14",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -231,7 +231,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot15.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 15 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("215",1);
+                carparkConfig2.put("15",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -242,7 +242,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot16.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 16 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("216",1);
+                carparkConfig2.put("16",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -253,7 +253,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot17.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 17 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("217",1);
+                carparkConfig2.put("17",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -264,7 +264,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot18.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 18 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("218",1);
+                carparkConfig2.put("18",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -275,7 +275,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot19.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 19 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("219",1);
+                carparkConfig2.put("19",0);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -286,7 +286,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot20.setBackgroundResource(R.drawable.button_selector);
                 Toast.makeText(EditCarPark2Configuration.this,"Slot 20 Selected", Toast.LENGTH_SHORT).show();
                 count2 += 1;
-                carparkConfig2.put("220",1);
+                carparkConfig2.put("20",1);
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
             }
         });
@@ -317,7 +317,7 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot20.setBackgroundResource(R.drawable.button_unselector);
                 count2 = 0;
                 for(int i = 0; i < 21; i++){
-                    carparkConfig2.put(Integer.toString(200+i), 0);
+                    carparkConfig2.put(Integer.toString(i), 1);
                 }
                 textViewCount.setText("Number of Vacancies = " + String.valueOf(count2));
                 price2Text.setText(null);
