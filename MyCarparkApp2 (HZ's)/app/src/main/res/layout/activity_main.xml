@@ -12,11 +12,11 @@
     </include>
 
     <ImageView
-        android:id="@+id/googlemapblackwhite"
+        android:id="@+id/carparkcolour"
         android:layout_width="match_parent"
-        android:layout_height="1000dp"
+        android:layout_height="0dp"
         android:scaleType="centerCrop"
-        android:src="@drawable/googlemapblackwhite" />
+        android:src="@drawable/carparkcolor" />
 
     <ImageView
         android:id="@+id/parkingicon"

@@ -16,6 +16,8 @@ public class SetCarParkConfiguration extends AppCompatActivity {
     Button buttonCarPark2;
     Button buttonCarPark3;
     Button buttonCarPark4;
+    Button buttonCarPark5;
+
 
 
     @Override
@@ -66,6 +68,17 @@ public class SetCarParkConfiguration extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        buttonCarPark5 = findViewById(R.id.buttonCarPark5);
+        buttonCarPark5.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetCarParkConfiguration.this , EditCarPark5Configuration.class);//links MainActivity to SubActivity
+                //the "back" arrow appears on the SubActivity because SubActivity is tied to MainActivity  in the Manifest Page
+                startActivity(intent);
+            }
+        });
+
     }
 
 
