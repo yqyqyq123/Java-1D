@@ -6,11 +6,6 @@
     android:layout_height="match_parent"
     tools:context=".MainActivity">
 
-    <include
-        android:id="@+id/toolbar"
-        layout="@layout/toolbar">
-    </include>
-
     <ImageView
         android:id="@+id/carparkcolour"
         android:layout_width="match_parent"
@@ -21,8 +16,8 @@
     <ImageView
         android:id="@+id/parkingicon"
         android:layout_width="match_parent"
-        android:paddingTop="200dp"
-        android:layout_height="650dp"
+        android:paddingTop="150dp"
+        android:layout_height="550dp"
         android:src="@drawable/parkingicon" />
 
     <TextView
@@ -38,6 +33,7 @@
         android:layout_width="300dp"
         android:layout_height="100dp"
         android:text="Get Directions !"
+        android:background="@drawable/button_blue"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintLeft_toLeftOf="parent"
         app:layout_constraintRight_toRightOf="parent"
