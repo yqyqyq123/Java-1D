@@ -1,0 +1,10 @@
+[
+    {
+        "merged": "/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher_round.png",
+        "source": "/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher_round.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/res/merged/release/mipmap-xxxhdpi/ic_launcher.png",
+        "source": "/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/src/main/res/mipmap-xxxhdpi/ic_launcher.png"
+    }
+]

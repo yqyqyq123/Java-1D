@@ -1,0 +1,195 @@
+-- Merging decision tree log ---
+manifest
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:2:1-67:12
+	package
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+	android:versionName
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:2:11-69
+	android:versionCode
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+uses-permission#android.permission.INTERNET
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:10:5-66
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:20:5-66
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:10:22-64
+permission#in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:12:5-14:47
+	android:protectionLevel
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:14:9-44
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:13:9-96
+uses-permission#in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:16:5-112
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:16:22-109
+uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:19:5-80
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:19:22-78
+uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:20:5-97
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:20:22-95
+uses-permission#android.permission.ACCESS_COARSE_LOCATION
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:21:5-80
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:21:22-78
+uses-permission#android.permission.ACCESS_FINE_LOCATION
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:22:5-78
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:22:22-76
+uses-feature#0x00020000
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:24:5-26:34
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:21:5-77
+	android:glEsVersion
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:25:9-41
+	android:required
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:26:9-32
+application
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:28:5-65:19
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/liuzh/.android/build-cache/0bf2cc943ebc8eb58ef545357c16724f1db1f005/output/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/AndroidManifest.xml:26:5-20
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/AndroidManifest.xml:26:5-20
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:24:5-19
+MERGED from [com.google.android.gms:play-services-location:11.0.4] /Users/liuzh/.android/build-cache/905d3a810e5cef7e09e69acfaebc2a410071b7c5/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:18:5-20:19
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/liuzh/.android/build-cache/887478a86ab865d4f034011618534d7d5bacd7bc/output/AndroidManifest.xml:4:5-19
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:19:5-21:19
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/AndroidManifest.xml:29:5-20
+MERGED from [com.android.volley:volley:1.0.0] /Users/liuzh/.android/build-cache/cf0a07f87f421d03dff2342d6e7db2a6b5f13c88/output/AndroidManifest.xml:9:5-20
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:31:9-41
+	android:supportsRtl
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:33:9-35
+	android:roundIcon
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:32:9-54
+	android:allowBackup
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:29:9-35
+	android:icon
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:30:9-43
+	android:theme
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:34:9-40
+activity#com.zhaohong.parkingandroidapp.MainActivity1stpage
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:38:9-46:20
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:40:13-45
+	android:theme
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:41:13-56
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:39:13-48
+intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:42:13-45:29
+action#android.intent.action.MAIN
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:43:17-69
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:43:25-66
+category#android.intent.category.LAUNCHER
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:44:17-77
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:44:27-74
+activity#com.zhaohong.parkingandroidapp.MarkerDemoActivity
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:48:9-50:56
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:50:13-54
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:49:13-47
+activity#com.zhaohong.parkingandroidapp.Insideparking
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:52:9-54:64
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:53:13-42
+	android:parentActivityName
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:54:13-62
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:52:19-48
+activity#com.zhaohong.parkingandroidapp.DrawPath
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:55:9-57:58
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:56:13-40
+	android:parentActivityName
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:57:13-56
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:55:19-43
+meta-data#com.google.android.geo.API_KEY
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:60:9-62:55
+	android:value
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:62:13-52
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:61:13-58
+uses-sdk
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/liuzh/.android/build-cache/0bf2cc943ebc8eb58ef545357c16724f1db1f005/output/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/0414fd88ac6d42deb689ad734f7657215d57f87c/output/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:23:5-43
+MERGED from [com.google.android.gms:play-services-location:11.0.4] /Users/liuzh/.android/build-cache/905d3a810e5cef7e09e69acfaebc2a410071b7c5/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:17:5-43
+MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/liuzh/.android/build-cache/887478a86ab865d4f034011618534d7d5bacd7bc/output/AndroidManifest.xml:3:5-43
+MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:17:5-43
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.volley:volley:1.0.0] /Users/liuzh/.android/build-cache/cf0a07f87f421d03dff2342d6e7db2a6b5f13c88/output/AndroidManifest.xml:7:5-43
+	tools:overrideLibrary
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:23:9-59
+	android:targetSdkVersion
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+	android:minSdkVersion
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+meta-data#android.support.VERSION
+ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/0414fd88ac6d42deb689ad734f7657215d57f87c/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/AndroidManifest.xml:22:5-24:41
+MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/AndroidManifest.xml:25:5-27:41
+MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/AndroidManifest.xml:25:5-27:41
+	android:value
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:27:9-38
+	android:name
+		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:26:9-47
+uses-permission#android.permission.ACCESS_NETWORK_STATE
+ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:19:5-78
+	android:name
+		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:19:22-76
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:9-172
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:146-170
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:86-145
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:19-85
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:20:9-121
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:20:66-119
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:20:20-65

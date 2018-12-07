@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="8df0e365e40beb151bc42dee20817721a6cab7b0">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_4588f4762cf562f19c21b39da876b71692cb1583.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcd01fd11233459f546c437ec927e9b61bf7caf1">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_32b3eb7b97e3e2d29d9abb9a55730eedf1340255.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/Library/Android/sdk/extras/m2repository/com/android/support/constraint/constraint-layout-solver/1.0.2/constraint-layout-solver-1.0.2.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="b9cd8fc6bd15cb915735d34535db30ece0c44603">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/constraint-layout-solver-1.0.2_204d8d2a3ffc5b8ddba0dc29905601bbc6804bc2.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/0414fd88ac6d42deb689ad734f7657215d57f87c/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="c4f45092eee6cdf1a5dbd597b2b6819be652ce2e">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_5d4171b971bb396d364bf4529697f0e13921bc47.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="cddcd0fb93bc70e27325f2f715b2710332004ebb">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_6ce1f8cb2395b3d55c0cc7564fa84d9d7ca41fe3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="9935891f23923f39d002087085d9696568a9f657">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_aeab4734d60202b365a71cd281e181064dc63bff.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="47471eb19df288158b00b8d9cfa41bce7373f5cc">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_7a6b0c28feac5eeb6c87752da444701bc569f16e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/Library/Android/sdk/extras/android/m2repository/com/android/support/support-annotations/26.0.0-alpha1/support-annotations-26.0.0-alpha1.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="023ee503b631f69511e335a061ea008f8da60f40">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/support-annotations-26.0.0-alpha1_b68bc794b0915fc9034f7a2650e3bda90f0ea498.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/cf0a07f87f421d03dff2342d6e7db2a6b5f13c88/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2cd4b982617e544728de0782d718a58ce1b06e3f">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_ff9e586cb0602442dc199f777b4105d321dc211c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/0bf2cc943ebc8eb58ef545357c16724f1db1f005/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="44ee06abb66da30f5855e6bf54574e64cdcd982a">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_1d71c0be4731c370ca90aaa15abee0f907b1c7de.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="18d31838aa4fcc768a8a0516e22cc13b94655d89">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_a8f3da9c07a8e2872896444d7261364d25df1e60.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="364364bf77b4a71afc5930fc3ae57b3f0eea637c">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_12a03daeba40de8cd2185dc59ade6064bc3cfd3d.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="d7c42c80f6509b9ea4db28ca7859ffae08ec5741">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_abd7cf442aeec2ca317c5c21d6dbded27cd7a04c.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="88246166d5afb106f532f6e6deae683c66b42c89">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_c4612e677852f1e3954697fcfb4569b2bea774c4.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2e92aa0163544a804a0b34f169ca61801770839a">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_7e062b92a49e592d7920f9e0a988ab74705090ca.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="6a022bf00ccd0948a8180c505e8e458bbddd43a6">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_cc0341ea5cca5450065c9bb0b90542415c1cb74e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="70ffe00aaf049893f59d1dad57bd82992faa38ef">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_171f1d23996a6ab12b3cebc86c40fc23535d0bc1.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/887478a86ab865d4f034011618534d7d5bacd7bc/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="2430e711762a749feb00b3d64858ca4768251b9d">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_225fe25c446ea2ea858c67e8cff6b65fae5db6a3.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="952944218ecedea1554a513dec0c14d570642843">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_909e7c2209e7f4069b123e8e9da85c22ee575d81.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/905d3a810e5cef7e09e69acfaebc2a410071b7c5/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="41f47bbcd281fdb1e42e220220ab3bfa1da591e0">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_5087bd0753b77f29513f0a8bcee636f0cf3e458e.jar" />
+    </item>
+    <item
+        is-multidex="false"
+        jar="/Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/jars/classes.jar"
+        jumboMode="false"
+        optimize="true"
+        revision="26.0.1"
+        sha1="fcae52a60bc07924d370b4d376116cd8f8581f54">
+        <dex dex="/Users/liuzh/Desktop/Smart-Parking-Android-Application-master/Android-master/ParkingAndroidapp/app/build/intermediates/pre-dexed/debug/classes_353263bdb8ec970842027a6cb81988919522a581.jar" />
+    </item>
+
+</items>

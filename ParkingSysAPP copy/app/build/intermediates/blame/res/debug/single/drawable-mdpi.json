@@ -1,0 +1,42 @@
+[
+    {
+        "merged": "/Users/liuzh/Desktop/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_name.png",
+        "source": "/Users/liuzh/Desktop/ParkingSysAPP/app/src/main/res/drawable-mdpi/ic_action_name.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/carpark.png",
+        "source": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/src/main/res/drawable-mdpi/carpark.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/bluerec.png",
+        "source": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/src/main/res/drawable-mdpi/bluerec.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/greenrec.png",
+        "source": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/src/main/res/drawable-mdpi/greenrec.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/ic_action_name.png",
+        "source": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/src/main/res/drawable-mdpi/ic_action_name.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/bluerec.png",
+        "source": "/Users/liuzh/Desktop/ParkingSysAPP/app/src/main/res/drawable-mdpi/bluerec.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/bluerect.png",
+        "source": "/Users/liuzh/Desktop/ParkingSysAPP/app/src/main/res/drawable-mdpi/bluerect.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/greenrec.png",
+        "source": "/Users/liuzh/Desktop/ParkingSysAPP/app/src/main/res/drawable-mdpi/greenrec.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/bluerect.png",
+        "source": "/Users/liuzh/Desktop/Git/Java-1D/ParkingSysAPP/app/src/main/res/drawable-mdpi/bluerect.png"
+    },
+    {
+        "merged": "/Users/liuzh/Desktop/ParkingSysAPP/app/build/intermediates/res/merged/debug/drawable-mdpi/carpark.png",
+        "source": "/Users/liuzh/Desktop/ParkingSysAPP/app/src/main/res/drawable-mdpi/carpark.png"
+    }
+]
