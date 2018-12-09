@@ -1,195 +1,537 @@
 -- Merging decision tree log ---
 manifest
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:2:1-67:12
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+MERGED from [com.google.firebase:firebase-core:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.5.aar/296fa58f8f79aafad8c98e8c864bae01/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/00c817384eb737dc9e1aa12cc3a8b404/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:17:1-32:12
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/189cce599db61abd499cd37bbbec0b03/AndroidManifest.xml:2:1-9:12
+MERGED from [com.android.volley:volley:1.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/2938e05f7227320b7aee6cd05e4ed25d/AndroidManifest.xml:2:1-11:12
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:2:1-21:12
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:15:1-25:12
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:17:1-28:12
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/37b8f6cdb63dd713908daad518f989bf/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:17:1-34:12
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:17:1-55:12
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.3.aar/76e57720c74df3506af20be87049c369/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:17:1-40:12
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:17:1-59:12
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/163e82b43219bcfcf67ebf60a8ba9eeb/AndroidManifest.xml:2:1-10:12
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:17:1-29:12
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/29bd5f76d92f48678faac2484b4dab18/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:2:1-17:12
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/309246b94768a0f1ec4dd9d5d470b45d/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.4.aar/c3b2552944cfb00e5ab7d5dcf05e9de9/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/9c6da93762ce2b1a87756a437357d498/AndroidManifest.xml:2:1-9:12
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/050399cb5acf163f20ed4b10814ce46b/AndroidManifest.xml:17:1-25:12
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0d15ee4a3af7c0c6eb7c5b197d1e40b4/AndroidManifest.xml:17:1-24:12
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:17:1-28:12
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:17:1-31:12
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:17:1-31:12
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/754d7a19738e058ff81e1937db38a838/AndroidManifest.xml:2:1-7:12
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/0bb63cea71e7268294073e448ae15ab8/AndroidManifest.xml:2:1-11:12
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:17:1-30:12
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
 	package
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:3:5-45
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:3:5-45
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
 	android:versionName
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
-	xmlns:android
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:2:11-69
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
 	android:versionCode
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:1-73:12
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+	xmlns:android
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:2:11-69
 uses-permission#android.permission.INTERNET
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:10:5-66
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:20:5-66
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:10:5-66
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:24:5-67
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:24:5-67
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:11:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:22:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:23:5-67
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:23:5-67
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:10:22-64
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:10:22-64
 permission#in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:12:5-14:47
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:12:5-14:47
 	android:protectionLevel
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:14:9-44
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:14:9-44
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:13:9-96
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:13:9-96
 uses-permission#in.wptrafficanalyzer.locationroutedirectionmapv2.permission.MAPS_RECEIVE
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:16:5-112
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:16:5-112
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:16:22-109
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:16:22-109
 uses-permission#android.permission.WRITE_EXTERNAL_STORAGE
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:19:5-80
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:19:5-80
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:19:22-78
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:19:22-78
 uses-permission#com.google.android.providers.gsf.permission.READ_GSERVICES
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:20:5-97
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:20:5-97
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:20:22-95
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:20:22-95
 uses-permission#android.permission.ACCESS_COARSE_LOCATION
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:21:5-80
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:21:5-80
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:21:22-78
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:21:22-78
 uses-permission#android.permission.ACCESS_FINE_LOCATION
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:22:5-78
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:22:5-78
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:22:22-76
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:22:22-76
 uses-feature#0x00020000
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:24:5-26:34
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:21:5-77
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:24:5-26:34
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:26:5-28:35
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:26:5-28:35
 	android:glEsVersion
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:25:9-41
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:25:9-41
 	android:required
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:26:9-32
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:26:9-32
 application
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:28:5-65:19
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/liuzh/.android/build-cache/0bf2cc943ebc8eb58ef545357c16724f1db1f005/output/AndroidManifest.xml:9:5-20
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/AndroidManifest.xml:26:5-20
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/AndroidManifest.xml:26:5-20
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:24:5-19
-MERGED from [com.google.android.gms:play-services-location:11.0.4] /Users/liuzh/.android/build-cache/905d3a810e5cef7e09e69acfaebc2a410071b7c5/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:18:5-20:19
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/liuzh/.android/build-cache/887478a86ab865d4f034011618534d7d5bacd7bc/output/AndroidManifest.xml:4:5-19
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:19:5-21:19
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/AndroidManifest.xml:29:5-20
-MERGED from [com.android.volley:volley:1.0.0] /Users/liuzh/.android/build-cache/cf0a07f87f421d03dff2342d6e7db2a6b5f13c88/output/AndroidManifest.xml:9:5-20
-	android:label
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:31:9-41
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:30:5-71:19
+MERGED from [com.google.firebase:firebase-core:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.5.aar/296fa58f8f79aafad8c98e8c864bae01/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-core:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.5.aar/296fa58f8f79aafad8c98e8c864bae01/AndroidManifest.xml:7:5-20
+MERGED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/00c817384eb737dc9e1aa12cc3a8b404/AndroidManifest.xml:9:5-20
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/00c817384eb737dc9e1aa12cc3a8b404/AndroidManifest.xml:9:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:30:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/189cce599db61abd499cd37bbbec0b03/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/189cce599db61abd499cd37bbbec0b03/AndroidManifest.xml:7:5-20
+MERGED from [com.android.volley:volley:1.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/2938e05f7227320b7aee6cd05e4ed25d/AndroidManifest.xml:9:5-20
+MERGED from [com.android.volley:volley:1.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/2938e05f7227320b7aee6cd05e4ed25d/AndroidManifest.xml:9:5-20
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:13:5-19:19
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:13:5-19:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/37b8f6cdb63dd713908daad518f989bf/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/37b8f6cdb63dd713908daad518f989bf/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:26:5-32:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:28:5-53:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.3.aar/76e57720c74df3506af20be87049c369/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.3.aar/76e57720c74df3506af20be87049c369/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:28:5-38:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:28:5-57:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/163e82b43219bcfcf67ebf60a8ba9eeb/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/163e82b43219bcfcf67ebf60a8ba9eeb/AndroidManifest.xml:7:5-8:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:22:5-27:19
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/29bd5f76d92f48678faac2484b4dab18/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/29bd5f76d92f48678faac2484b4dab18/AndroidManifest.xml:22:5-20
+MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:9:5-15:19
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/309246b94768a0f1ec4dd9d5d470b45d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/309246b94768a0f1ec4dd9d5d470b45d/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.4.aar/c3b2552944cfb00e5ab7d5dcf05e9de9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.4.aar/c3b2552944cfb00e5ab7d5dcf05e9de9/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/9c6da93762ce2b1a87756a437357d498/AndroidManifest.xml:7:5-20
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/9c6da93762ce2b1a87756a437357d498/AndroidManifest.xml:7:5-20
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/050399cb5acf163f20ed4b10814ce46b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/050399cb5acf163f20ed4b10814ce46b/AndroidManifest.xml:22:5-23:19
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0d15ee4a3af7c0c6eb7c5b197d1e40b4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0d15ee4a3af7c0c6eb7c5b197d1e40b4/AndroidManifest.xml:22:5-20
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:22:5-26:19
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:22:5-26:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:25:5-29:19
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:25:5-29:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:24:5-28:19
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:24:5-28:19
 	android:supportsRtl
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:33:9-35
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:35:9-35
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:33:9-41
 	android:roundIcon
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:32:9-54
-	android:allowBackup
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:29:9-35
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:34:9-54
 	android:icon
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:30:9-43
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:32:9-43
+	android:allowBackup
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:31:9-35
 	android:theme
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:34:9-40
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:36:9-40
 activity#com.zhaohong.parkingandroidapp.MainActivity1stpage
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:38:9-46:20
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:39:9-47:20
 	android:label
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:40:13-45
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:41:13-45
 	android:theme
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:41:13-56
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:42:13-56
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:39:13-48
-intent-filter#android.intent.action.MAIN+android.intent.category.LAUNCHER
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:42:13-45:29
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:40:13-48
+intent-filter#action:name:android.intent.action.MAIN+category:name:android.intent.category.LAUNCHER
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:43:13-46:29
 action#android.intent.action.MAIN
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:43:17-69
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:44:17-69
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:43:25-66
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:44:25-66
 category#android.intent.category.LAUNCHER
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:44:17-77
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:45:17-77
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:44:27-74
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:45:27-74
 activity#com.zhaohong.parkingandroidapp.MarkerDemoActivity
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:48:9-50:56
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:49:9-51:56
 	android:label
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:50:13-54
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:51:13-54
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:49:13-47
-activity#com.zhaohong.parkingandroidapp.Insideparking
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:52:9-54:64
-	android:label
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:53:13-42
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:50:13-47
+activity#com.zhaohong.parkingandroidapp.insideparking3
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:53:9-55:63
 	android:parentActivityName
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:54:13-62
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:55:13-61
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:54:13-43
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:52:19-48
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:53:19-49
+activity#com.zhaohong.parkingandroidapp.PreviousParking
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:57:9-59:63
+	android:parentActivityName
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:59:13-61
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:58:13-45
+	android:name
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:57:19-50
 activity#com.zhaohong.parkingandroidapp.DrawPath
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:55:9-57:58
-	android:label
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:56:13-40
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:61:9-63:63
 	android:parentActivityName
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:57:13-56
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:63:13-61
+	android:label
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:62:13-40
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:55:19-43
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:61:19-43
 meta-data#com.google.android.geo.API_KEY
-ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:60:9-62:55
+ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:66:9-68:55
 	android:value
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:62:13-52
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:68:13-52
 	android:name
-		ADDED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml:61:13-58
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml:67:13-58
 uses-sdk
-INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
-MERGED from [com.android.support.constraint:constraint-layout:1.0.2] /Users/liuzh/.android/build-cache/0bf2cc943ebc8eb58ef545357c16724f1db1f005/output/AndroidManifest.xml:5:5-7:41
-MERGED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:21:5-23:62
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/AndroidManifest.xml:21:5-23:78
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/0414fd88ac6d42deb689ad734f7657215d57f87c/output/AndroidManifest.xml:20:5-44
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/AndroidManifest.xml:20:5-44
-MERGED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:23:5-43
-MERGED from [com.google.android.gms:play-services-location:11.0.4] /Users/liuzh/.android/build-cache/905d3a810e5cef7e09e69acfaebc2a410071b7c5/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:17:5-43
-MERGED from [com.google.android.gms:play-services-tasks:11.0.4] /Users/liuzh/.android/build-cache/887478a86ab865d4f034011618534d7d5bacd7bc/output/AndroidManifest.xml:3:5-43
-MERGED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:17:5-43
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/AndroidManifest.xml:21:5-23:54
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/AndroidManifest.xml:21:5-23:63
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/AndroidManifest.xml:21:5-23:60
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/AndroidManifest.xml:21:5-23:61
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/AndroidManifest.xml:21:5-23:58
-MERGED from [com.android.volley:volley:1.0.0] /Users/liuzh/.android/build-cache/cf0a07f87f421d03dff2342d6e7db2a6b5f13c88/output/AndroidManifest.xml:7:5-43
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml reason: use-sdk injection requested
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+MERGED from [com.google.firebase:firebase-core:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.5.aar/296fa58f8f79aafad8c98e8c864bae01/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-core:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-core-16.0.5.aar/296fa58f8f79aafad8c98e8c864bae01/AndroidManifest.xml:5:5-44
+MERGED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:21:5-23:62
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:21:5-23:78
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/00c817384eb737dc9e1aa12cc3a8b404/AndroidManifest.xml:5:5-7:41
+MERGED from [com.android.support.constraint:constraint-layout:1.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/constraint-layout-1.1.3.aar/00c817384eb737dc9e1aa12cc3a8b404/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/189cce599db61abd499cd37bbbec0b03/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-location:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-location-16.0.0.aar/189cce599db61abd499cd37bbbec0b03/AndroidManifest.xml:5:5-44
+MERGED from [com.android.volley:volley:1.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/2938e05f7227320b7aee6cd05e4ed25d/AndroidManifest.xml:7:5-43
+MERGED from [com.android.volley:volley:1.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/volley-1.1.0.aar/2938e05f7227320b7aee6cd05e4ed25d/AndroidManifest.xml:7:5-43
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:6:5-8:41
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:18:5-20:41
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:18:5-20:41
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/37b8f6cdb63dd713908daad518f989bf/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-auth-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-auth-interop-16.0.1.aar/37b8f6cdb63dd713908daad518f989bf/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.3.aar/76e57720c74df3506af20be87049c369/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-measurement-api:16.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-api-16.0.3.aar/76e57720c74df3506af20be87049c369/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/163e82b43219bcfcf67ebf60a8ba9eeb/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-iid-interop:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-interop-16.0.1.aar/163e82b43219bcfcf67ebf60a8ba9eeb/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/29bd5f76d92f48678faac2484b4dab18/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-places-placereport:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-places-placereport-16.0.0.aar/29bd5f76d92f48678faac2484b4dab18/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:5:5-7:41
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/309246b94768a0f1ec4dd9d5d470b45d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-tasks:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-tasks-16.0.1.aar/309246b94768a0f1ec4dd9d5d470b45d/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.4.aar/c3b2552944cfb00e5ab7d5dcf05e9de9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-measurement-base:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-measurement-base-16.0.4.aar/c3b2552944cfb00e5ab7d5dcf05e9de9/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/9c6da93762ce2b1a87756a437357d498/AndroidManifest.xml:5:5-44
+MERGED from [com.google.android.gms:play-services-stats:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-stats-16.0.1.aar/9c6da93762ce2b1a87756a437357d498/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/050399cb5acf163f20ed4b10814ce46b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-measurement-connector:17.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-17.0.1.aar/050399cb5acf163f20ed4b10814ce46b/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0d15ee4a3af7c0c6eb7c5b197d1e40b4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-ads-identifier:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-ads-identifier-16.0.0.aar/0d15ee4a3af7c0c6eb7c5b197d1e40b4/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:20:5-44
+MERGED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:20:5-44
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:21:5-23:54
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:21:5-23:63
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:21:5-23:60
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:21:5-23:61
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:21:5-23:58
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:21:5-23:58
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/754d7a19738e058ff81e1937db38a838/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:firebase-database-collection:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-collection-16.0.1.aar/754d7a19738e058ff81e1937db38a838/AndroidManifest.xml:5:5-44
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/0bb63cea71e7268294073e448ae15ab8/AndroidManifest.xml:7:5-9:41
+MERGED from [com.google.firebase:protolite-well-known-types:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/protolite-well-known-types-16.0.1.aar/0bb63cea71e7268294073e448ae15ab8/AndroidManifest.xml:7:5-9:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:20:5-22:41
+MERGED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:20:5-22:41
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
 	tools:overrideLibrary
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:23:9-59
+		ADDED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:23:9-59
 	android:targetSdkVersion
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
 	android:minSdkVersion
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
-		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		ADDED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
+		INJECTED from /Users/liuzh/Desktop/ParkingSysAPP copy/app/src/main/AndroidManifest.xml
 meta-data#android.support.VERSION
-ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:appcompat-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/81b76391ca81f8419f26ce84baa32b561f72ef06/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:animated-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6c168fe95c4f8db00489f4986a7625f8dd6634f5/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-vector-drawable:26.0.0-alpha1] /Users/liuzh/.android/build-cache/14409940efd77f748df9b20260e53079719b9d7f/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:recyclerview-v7:26.0.0-alpha1] /Users/liuzh/.android/build-cache/0414fd88ac6d42deb689ad734f7657215d57f87c/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:transition:26.0.0-alpha1] /Users/liuzh/.android/build-cache/9c117ceb96407ed3a54fd6f02d95e1a0eafe0b4e/output/AndroidManifest.xml:22:5-24:41
-MERGED from [com.android.support:support-v4:26.0.0-alpha1] /Users/liuzh/.android/build-cache/759bac7f3c3e0a3a04ecfa80467ee96e8020fa95/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-media-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/5438355d8d16167fa3776ac1e0ee54464893768d/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-fragment:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f6cbc32ba8e8271a0cf8b174440cc53491efaa1/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-ui:26.0.0-alpha1] /Users/liuzh/.android/build-cache/41025a656a16c15a58c09a6e002c604e601c291c/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-core-utils:26.0.0-alpha1] /Users/liuzh/.android/build-cache/1f1e58d2d6489effc6a5968241f3c997d29eace1/output/AndroidManifest.xml:25:5-27:41
-MERGED from [com.android.support:support-compat:26.0.0-alpha1] /Users/liuzh/.android/build-cache/6b545b12eb3fccc180bda2c792312f0904a15378/output/AndroidManifest.xml:25:5-27:41
+ADDED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:appcompat-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/appcompat-v7-26.1.0.aar/2efd652d138edfa54fa6f1fd31266651/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:animated-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/animated-vector-drawable-26.1.0.aar/3ae2f6235055c993f6549344b72d7be7/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-vector-drawable:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-vector-drawable-26.1.0.aar/29d977f82352eb9ffea5d4e9299ebc11/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:recyclerview-v7:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/recyclerview-v7-26.1.0.aar/206b3b6ad867b8987027d25508aaa98b/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:transition:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/transition-26.1.0.aar/bf5f30d540d4af88810bbeb8a1a23c03/AndroidManifest.xml:23:9-25:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-v4:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-v4-26.1.0.aar/b15c2225b4db35b664386a093e14c1a2/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-media-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-media-compat-26.1.0.aar/e68a3285d2dceaf7fb1bb8484153ef3c/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-fragment:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-fragment-26.1.0.aar/d6f3a790ef2d6a6b3edae593d0daf57b/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-utils:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-utils-26.1.0.aar/0c0198b4b10ee2c120d1c94ab2b1342f/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-core-ui:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-core-ui-26.1.0.aar/1cd660f428faef8fd37cb707ebecfeba/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:26:9-28:38
+MERGED from [com.android.support:support-compat:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/support-compat-26.1.0.aar/3f456f845855e663310ae328c088e8d7/AndroidManifest.xml:26:9-28:38
 	android:value
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:27:9-38
+		ADDED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:28:13-35
 	android:name
-		ADDED from [com.android.support:design:26.0.0-alpha1] /Users/liuzh/.android/build-cache/ed9cc888d1c9c813552c8b08ffbd21dca043707b/output/AndroidManifest.xml:26:9-47
+		ADDED from [com.android.support:design:26.1.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/design-26.1.0.aar/2b15d627756ab6c1a013fe8fc0d22694/AndroidManifest.xml:27:13-51
 uses-permission#android.permission.ACCESS_NETWORK_STATE
-ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:19:5-78
+ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:10:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-database:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-database-16.0.5.aar/89ac44b4d2e4f6fc7d76de14e6489696/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:23:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:24:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:22:5-79
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:22:5-79
 	android:name
-		ADDED from [com.google.android.gms:play-services-maps:11.0.4] /Users/liuzh/.android/build-cache/146e775beede3ca3b6cd4326a6c384955e8a0bc4/output/AndroidManifest.xml:19:22-76
-activity#com.google.android.gms.common.api.GoogleApiActivity
-ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:9-172
+		ADDED from [com.google.android.gms:play-services-maps:16.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-maps-16.0.0.aar/c421ee465d954fab34d08ef47861d02a/AndroidManifest.xml:23:22-76
+service#com.google.firebase.components.ComponentDiscoveryService
+ADDED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:14:9-18:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:27:9-31:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:29:9-35:19
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:29:9-35:19
 	android:exported
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:146-170
-	android:theme
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:86-145
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:31:13-37
 	android:name
-		ADDED from [com.google.android.gms:play-services-base:11.0.4] /Users/liuzh/.android/build-cache/ac75f0cbf693d2acf493175c9d8ea512aae10822/output/AndroidManifest.xml:19:19-85
-meta-data#com.google.android.gms.version
-ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:20:9-121
+		ADDED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:14:18-89
+meta-data#com.google.firebase.components:com.google.firebase.firestore.FirestoreRegistrar
+ADDED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:15:13-17:85
 	android:value
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:20:66-119
+		ADDED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:17:17-82
 	android:name
-		ADDED from [com.google.android.gms:play-services-basement:11.0.4] /Users/liuzh/.android/build-cache/71e34e562c9976ee57616ddbfc00c22a8fadfaa1/output/AndroidManifest.xml:20:20-65
+		ADDED from [com.google.firebase:firebase-firestore:17.1.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-firestore-17.1.3.aar/4d852f7158adc1b3aa7a89ba44d1efb2/AndroidManifest.xml:16:17-111
+uses-permission#android.permission.WAKE_LOCK
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:25:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:24:5-68
+MERGED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:24:5-68
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:24:22-65
+meta-data#com.google.firebase.components:com.google.firebase.analytics.connector.internal.AnalyticsConnectorRegistrar
+ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:28:13-30:85
+	android:value
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:30:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-measurement-connector-impl:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-measurement-connector-impl-17.0.3.aar/cf92e4a9eb5ab6c5116e0d7805c90e29/AndroidManifest.xml:29:17-139
+uses-permission#com.google.android.finsky.permission.BIND_GET_INSTALL_REFERRER_SERVICE
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:26:5-110
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:26:5-110
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:26:22-107
+receiver#com.google.android.gms.measurement.AppMeasurementReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:29:9-33:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:31:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:32:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:30:13-85
+receiver#com.google.android.gms.measurement.AppMeasurementInstallReferrerReceiver
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:34:9-42:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:29:9-37:20
+MERGED from [com.google.firebase:firebase-analytics-impl:16.2.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-impl-16.2.3.aar/ca286473408c988a6fcbb34acfd91502/AndroidManifest.xml:29:9-37:20
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:36:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:37:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:38:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:35:13-100
+intent-filter#action:name:com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:39:13-41:29
+action#com.android.vending.INSTALL_REFERRER
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:40:17-79
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:40:25-76
+service#com.google.android.gms.measurement.AppMeasurementService
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:44:9-47:40
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:46:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:47:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:45:13-84
+service#com.google.android.gms.measurement.AppMeasurementJobService
+ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:48:9-52:72
+	android:enabled
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:50:13-35
+	android:exported
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:51:13-37
+	android:permission
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:52:13-69
+	android:name
+		ADDED from [com.google.firebase:firebase-analytics:16.0.5] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-analytics-16.0.5.aar/40881fcf19bb588f66515fa11ade97cb/AndroidManifest.xml:49:13-87
+uses-permission#com.google.android.c2dm.permission.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:26:5-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:26:22-79
+meta-data#com.google.firebase.components:com.google.firebase.iid.Registrar
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:32:13-34:85
+	android:value
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:34:17-82
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:33:17-96
+receiver#com.google.firebase.iid.FirebaseInstanceIdReceiver
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:37:9-44:20
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:39:13-36
+	android:permission
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:40:13-73
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:38:13-78
+intent-filter#action:name:com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:41:13-43:29
+action#com.google.android.c2dm.intent.RECEIVE
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:42:17-81
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:42:25-78
+service#com.google.firebase.iid.FirebaseInstanceIdService
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:50:9-56:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:52:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:51:13-77
+intent-filter#action:name:com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:53:13-55:29
+	android:priority
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:53:28-51
+action#com.google.firebase.INSTANCE_ID_EVENT
+ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:54:17-80
+	android:name
+		ADDED from [com.google.firebase:firebase-iid:17.0.3] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-iid-17.0.3.aar/67b684cdec131eeddaa329069358e5f1/AndroidManifest.xml:54:25-77
+activity#com.google.android.gms.common.api.GoogleApiActivity
+ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:23:9-26:75
+	android:exported
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:25:13-37
+	android:theme
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:26:13-72
+	android:name
+		ADDED from [com.google.android.gms:play-services-base:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-base-16.0.1.aar/43a3482e54d64260421177b00811e2c7/AndroidManifest.xml:24:13-79
+provider#com.google.firebase.provider.FirebaseInitProvider
+ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:10:9-14:39
+	android:authorities
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:12:13-72
+	android:exported
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:13:13-37
+	android:initOrder
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:14:13-36
+	android:name
+		ADDED from [com.google.firebase:firebase-common:16.0.4] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/firebase-common-16.0.4.aar/bb33d1a31677602536056bc5bcccc10c/AndroidManifest.xml:11:13-77
+meta-data#com.google.android.gms.version
+ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:23:9-25:69
+	android:value
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:25:13-66
+	android:name
+		ADDED from [com.google.android.gms:play-services-basement:16.0.1] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/play-services-basement-16.0.1.aar/a24203384398464a32f2b8ea47e3d421/AndroidManifest.xml:24:13-58
+meta-data#android.arch.lifecycle.VERSION
+ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:25:9-27:47
+	android:value
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:27:13-44
+	android:name
+		ADDED from [android.arch.lifecycle:runtime:1.0.0] /Users/liuzh/.gradle/caches/transforms-1/files-1.1/runtime-1.0.0.aar/8adae2367e7a133586b6f21030515d10/AndroidManifest.xml:26:13-58
