@@ -3,6 +3,7 @@ package com.zhaohong.parkingandroidapp;
 import android.app.AlertDialog;
 import android.content.DialogInterface;
 import android.content.Intent;
+import android.content.SharedPreferences;
 import android.graphics.Canvas;
 import android.os.Bundle;
 import android.support.annotation.NonNull;
@@ -48,8 +49,11 @@ public class insideparking2 extends AppCompatActivity{
     String count1;
     String price1;
     Button[] buttons = new Button[20];
-    Entry selectslot;
+    int selectslot;
     Button selectbutton;
+    private final String sharedPrefFile = "com.example.android.mainsharedprefs";
+    public static final String KEY = "MyKey2";
+    SharedPreferences mPreferences;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -57,6 +61,7 @@ public class insideparking2 extends AppCompatActivity{
         setContentView(R.layout.insidepark2);
         Intent intent = getIntent();
 
+        mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         final DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark2Configure");
@@ -94,6 +99,9 @@ public class insideparking2 extends AppCompatActivity{
                 confirmbtn.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {
+                        selectslot = mPreferences.getInt(KEY,0);
+                        selectbutton = findViewById(selectslot);
+
                         if(selectbutton!=null){
                             selectbutton.setBackgroundResource(R.drawable.button_mycar);
                             int[] coords = new int[2];
@@ -193,6 +201,11 @@ public class insideparking2 extends AppCompatActivity{
             selectbutton=null;
         }
         selectbutton = button;
+
+        SharedPreferences.Editor preferenceEditor = mPreferences.edit();
+        preferenceEditor.putInt(KEY,selectbutton.getId());
+        preferenceEditor.commit();
+
         selectbutton.setBackgroundResource(R.drawable.button_mycar);
     }
     public void addonclick(){
@@ -233,25 +246,6 @@ public class insideparking2 extends AppCompatActivity{
         }
     }
 
-    public void getcorrdinate(){
-        if(selectbutton!=null){
-            final ViewTreeObserver vto = selectbutton.getViewTreeObserver();
-            vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
-                @Override
-                public void onGlobalLayout() {
-                    selectbutton.getViewTreeObserver().removeGlobalOnLayoutListener(this);
-                    int height = selectbutton.getMeasuredHeight();
-                    int width = selectbutton.getMeasuredWidth();
-                    Log.e("Test", "高度：" + height);
-                    Log.e("Test", "宽度：" + width);
-                    Log.e("Test", "左上角坐标x：" + selectbutton.getLeft());
-                    Log.e("Test", "左上角坐标y：" + selectbutton.getTop());
-                    Log.e("Test", "右下角坐标x：" + selectbutton.getRight());
-                    Log.e("Test", "右下角坐标y：" + selectbutton.getBottom());
-                }
-            });
-        }
-    }
 
 
 }

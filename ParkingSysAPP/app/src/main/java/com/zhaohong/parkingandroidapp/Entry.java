@@ -3,7 +3,6 @@ package com.zhaohong.parkingandroidapp;
 public class Entry{
 
     private String entryID;
-    private Lot parkingLot;
     private boolean locked;
 
     /**
@@ -36,25 +35,6 @@ public class Entry{
      * Signals the parking lot this entry is associated with
      * to check for available space
      */
-    public boolean checkLotCapacity(){
-
-        synchronized(parkingLot){
-
-            return parkingLot.checkForAvailableSpace();
-        }
-    }
-
-    /**
-     * Signals the parking lot of a car that has been
-     * allowed in and is about to park
-     */
-    public void notifyLotOfParkedCar(){
-
-        synchronized(parkingLot){
-            parkingLot.parkCar();
-        }
-    }
-
 
     /**
      * Getter method for the locked variable

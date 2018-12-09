@@ -31,6 +31,7 @@
     <string name="time_slot">time slot</string>
     <string name="to">to</string>
     <string name="book_slot">book slot</string>
+    <string name="Previous">Privious</string>
 
 
-    </resources>
+</resources>

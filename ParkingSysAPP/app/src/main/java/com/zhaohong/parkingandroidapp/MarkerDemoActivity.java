@@ -99,11 +99,8 @@ import javax.annotation.Nullable;
  * This shows how to place markers on a map.
  */
 public class MarkerDemoActivity extends AppCompatActivity implements
-        OnMarkerClickListener,/*
-        OnInfoWindowClickListener,
-        OnInfoWindowLongClickListener,
-        OnInfoWindowCloseListener,*/
-        OnMapAndViewReadyListener.OnGlobalLayoutAndMapReadyListener {
+        OnMarkerClickListener, OnMapAndViewReadyListener.OnGlobalLayoutAndMapReadyListener {
+
     //这里这里
     FirebaseDatabase db = FirebaseDatabase.getInstance();
     DatabaseReference mDocRef2 = db.getReference("java1dcarpark").child("currentLocation");
@@ -123,7 +120,12 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     LatLng currentLocation = new LatLng(1.341195, 103.964157);;
 
-    Double park1,park2,park3,park4;
+    Double park1 = 0.0;
+    Double park2 = 0.0;
+    Double park3 = 0.0;
+    Double park4 = 0.0;
+
+    double[] parks = {park1,park2,park3,park4};
 
     class CustomInfoWindowAdapter implements InfoWindowAdapter {
 
@@ -159,19 +161,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         }
 
         private void render(Marker marker, View view) {
-            int badge;
-            // Use the equals() method on a Marker to check for equals.  Do not use ==.
-            if (marker.equals(mCarpark1)) {
-                badge = R.drawable.parking_icon;
-            } else if (marker.equals(mCarpark2)) {
-                badge = R.drawable.parking_icon;
-            } else if(marker.equals(mCurrent)){
-                badge = R.drawable.arrow;
-            } else {
-                // Passing 0 to setImageResource will clear the image view.
-                badge = 0;
-            }
-            ((ImageView) view.findViewById(R.id.badge)).setImageResource(badge);
 
             String title = marker.getTitle();
             TextView titleUi = ((TextView) view.findViewById(R.id.title));
@@ -212,11 +201,13 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     private Marker bestcarpark;
 
+    String selectCarpark;
 
     private Marker clickmark;
 
     ArrayList<LatLng> mmPoints;
 
+    double bestpark;
     /**
      * Keeps track of the last selected marker (though it may no longer be selected).  This is
      * useful for refreshing the info window.
@@ -228,6 +219,8 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     double currentLongitude;
     String carpark1info = "";
     String carpark2info = "";
+    String carpark3info = "";
+    String carpark4info = "";
 
     Location curLoc = new Location("currentLocation");
     Location carpark1_location = new Location("carpark1");
@@ -237,6 +230,8 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     Double distance_1,distance_2,distance_3,distance_4;
 
     private final Random mRandom = new Random();
+    //FirebaseDatabase db = FirebaseDatabase.getInstance();
+    DatabaseReference mWhichCarpark = db.getReference("java1dcarpark").child("selectCarpark");
 
 
 
@@ -246,9 +241,24 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         setContentView(R.layout.marker_demo);
 
         //这里这里 从这里开始
-        FirebaseDatabase db = FirebaseDatabase.getInstance();
+        //FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference mDocRef = db.getReference("java1dcarpark").child("currentLocation");
         DatabaseReference mDocConfig1 = db.getReference("java1dcarpark").child("carpark1Configure");
+        DatabaseReference mWhichCarpark = db.getReference("java1dcarpark").child("selectCarpark");
+
+
+        mWhichCarpark.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                selectCarpark = dataSnapshot.getValue(String.class);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
+
+
         mDocRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -264,20 +274,14 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                         .title("currentlocation")
                         .anchor(0.5f,0.5f)
                         .snippet("you are here"));
-                Double bestpark = Math.min(park1,park2);
-                //Log.i("zhhhhhhh",bestpark.toString());
-                if(bestpark == park1){
 
-                    Log.i("hhhhhhhh","1");
+                if(bestpark == park1){
                     bestcarpark = mCarpark1;
                     bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
                 }else {
-
-                    Log.i("hhhhhhhhh","2");
                     bestcarpark = mCarpark2;
                     bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
                 }
-
             }
 
             @Override
@@ -286,6 +290,27 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             }
         });
 
+        curLoc.setLatitude(currentLocation.latitude);
+        curLoc.setLongitude(currentLocation.longitude);
+
+
+        carpark1_location.setLatitude(carpark1.latitude);
+        carpark1_location.setLongitude(carpark1.longitude);
+        distance_1 = (carpark1_location.distanceTo(curLoc))* 0.000621371 ;
+
+        carpark2_location.setLatitude(carpark2.latitude);
+        carpark2_location.setLongitude(carpark2.longitude);
+        distance_2 = (carpark2_location.distanceTo(curLoc))* 0.000621371 ;
+
+
+        carpark3_location.setLatitude(carpark3.latitude);
+        carpark3_location.setLongitude(carpark3.longitude);
+        distance_3 = (carpark3_location.distanceTo(curLoc))* 0.000621371 ;
+
+
+        carpark4_location.setLatitude(carpark4.latitude);
+        carpark4_location.setLongitude(carpark4.longitude);
+        distance_4 = (carpark4_location.distanceTo(curLoc))* 0.000621371 ;
 
 
         mDocConfig1.addValueEventListener(new ValueEventListener() {
@@ -296,9 +321,10 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 String count1 = String.valueOf(countMap.get("carpark1Count"));
                 String price1 = String.valueOf(priceMap.get("carpark1Price"));
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count1)+"/"+price1);
-                carpark1info = "Vacancy: "+count1+"/20"+"\n"+"price: "+price1;
-                mCarpark1.setSnippet("Vacancy: "+count1+"/20"+"\n"+"price: "+price1);
+                carpark1info = Double.toString(distance_1)+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1;
+                mCarpark1.setSnippet(distance_1+"miles"+"\n"+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1);
                 park1 = (double)Integer.parseInt(count1)/20+Integer.parseInt(price1)+distance_1*100;
+                bestpark = park1;
                 Log.i("zhaohongeeee",park1.toString());
                 /*Log.i("zhaohongtessss"," "+count1+" "+price1);
                 Log.i("zhaohongTtttttt",distance_1.toString());
@@ -320,10 +346,62 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 String count2 = String.valueOf(countMap.get("carpark2Count"));
                 String price2 = String.valueOf(countMap.get("carpark2Price"));
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count2)+"/"+price2);
-                carpark2info = "Vacancy: "+count2+"/20"+"\n"+"price: "+price2;
-                mCarpark2.setSnippet("Vacancy: "+count2+"/20"+"\n"+"price: "+price2);
+                carpark2info = Double.toString(distance_2)+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2;
+                mCarpark2.setSnippet(distance_2+"miles"+"\n"+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2);
                 park2 = (double)Integer.parseInt(count2)/20+Integer.parseInt(price2)+distance_2*100;
+                if(park2<bestpark){
+                    bestpark = park2;
+                }
                 Log.i("zhohhhhh",park2.toString());
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.w("!!!READcount", "FAIL", databaseError.toException());
+            }
+        });
+
+        DatabaseReference mDocConfig3 = db.getReference("java1dcarpark").child("carpark3Configure");
+
+        mDocConfig3.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Map<String, String> countMap = (Map) dataSnapshot.getValue();
+                Map<String, String> priceMap = (Map) dataSnapshot.getValue();
+                String count3 = String.valueOf(countMap.get("carpark3Count"));
+                String price3 = String.valueOf(countMap.get("carpark3Price"));
+                Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count3)+"/"+price3);
+                carpark3info = Double.toString(distance_3)+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3;
+                mCarpark3.setSnippet(distance_3+"miles"+"\n"+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3);
+                park3 = (double)Integer.parseInt(count3)/20+Integer.parseInt(price3)+distance_3*100;
+                if(park3<bestpark){
+                    bestpark=park3;
+                }
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+                Log.w("!!!READcount", "FAIL", databaseError.toException());
+            }
+        });
+
+        DatabaseReference mDocConfig4 = db.getReference("java1dcarpark").child("carpark4Configure");
+
+        mDocConfig4.addValueEventListener(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                Map<String, String> countMap = (Map) dataSnapshot.getValue();
+                Map<String, String> priceMap = (Map) dataSnapshot.getValue();
+                String count4 = String.valueOf(countMap.get("carpark4Count"));
+                String price4 = String.valueOf(countMap.get("carpark4Price"));
+                Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count4)+"/"+price4);
+                carpark4info = Double.toString(distance_4)+"Vacancy: "+count4+"/20"+"\n"+"price: "+price4;
+                mCarpark4.setSnippet(distance_4+"miles"+"\n"+"Vacancy: "+count4+"/20"+"\n"+"price: "+price4);
+                park4 = (double)Integer.parseInt(count4)/20+Integer.parseInt(price4)+distance_4*100;
+                if(park4<bestpark){
+                    bestpark=park4;
+                }
+                Log.i("zhohhhhh",park4.toString());
             }
 
             @Override
@@ -377,9 +455,11 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         LatLngBounds bounds = new LatLngBounds.Builder()
                 .include(carpark1)
                 .include(carpark2)
+                .include(carpark3)
+                .include(carpark4)
                 .include(currentLocation)
                 .build();
-        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 50));
+        mMap.moveCamera(CameraUpdateFactory.newLatLngBounds(bounds, 40));
 
 
         mMap.setInfoWindowAdapter(new GoogleMap.InfoWindowAdapter() {
@@ -417,34 +497,11 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     // carpark1和carpark2改了一丢丢~~~
     private void addMarkersToMap() {
         // Uses a colored icon.
-        curLoc.setLatitude(currentLocation.latitude);
-        curLoc.setLongitude(currentLocation.longitude);
-
-
-        carpark1_location.setLatitude(carpark1.latitude);
-        carpark1_location.setLongitude(carpark1.longitude);
-        distance_1 = (carpark1_location.distanceTo(curLoc))* 0.000621371 ;
-
-        carpark2_location.setLatitude(carpark2.latitude);
-        carpark2_location.setLongitude(carpark2.longitude);
-        distance_2 = (carpark2_location.distanceTo(curLoc))* 0.000621371 ;
-
-
-        carpark3_location.setLatitude(carpark3.latitude);
-        carpark3_location.setLongitude(carpark3.longitude);
-        distance_3 = (carpark3_location.distanceTo(curLoc))* 0.000621371 ;
-
-
-        carpark4_location.setLatitude(carpark4.latitude);
-        carpark4_location.setLongitude(carpark4.longitude);
-        distance_4 = (carpark4_location.distanceTo(curLoc))* 0.000621371 ;
-
         mCarpark1 = mMap.addMarker(new MarkerOptions()
                 .position(carpark1)
                 .title("carpark1")
                 .snippet(Double.toString(distance_1)+"miles"+"\n"+carpark1info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
-
         // Uses a custom icon with the info window popping out of the center of the icon.
 
         // Creates a draggable marker. Long press to drag.
@@ -457,13 +514,13 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         mCarpark3 = mMap.addMarker(new MarkerOptions()
                 .position(carpark3)
                 .title("carpark3")
-                .snippet(Double.toString(distance_3)+"miles"+"\n"+"avaliable slot 4/20")
+                .snippet(Double.toString(distance_3)+"miles"+"\n"+carpark3info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mCarpark4 = mMap.addMarker(new MarkerOptions()
                 .position(carpark4)
                 .title("carpark4")
-                .snippet(Double.toString(distance_4)+"miles"+"\n"+"avaliable slot 4/20")
+                .snippet(Double.toString(distance_4)+"miles"+"\n"+carpark4info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mCurrent = mMap.addMarker(new MarkerOptions()
@@ -471,16 +528,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 .title("currentlocation")
                 .anchor(0.5f,0.5f)
                 .snippet("you are here"));
-        //bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-        //Log.i("zhaohongtess",park1.toString());
-        /*if(park1<park2){
-            mCarpark1.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-        }else {
-            mCarpark2.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-        }*/
-        //Log.i("zhaohongtesss",parkdata1.toString());
     }
-
     /**
      * Demonstrates converting a {@link Drawable} to a {@link BitmapDescriptor},
      * for use as a marker icon.
@@ -495,7 +543,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         vectorDrawable.draw(canvas);
         return BitmapDescriptorFactory.fromBitmap(bitmap);
     }
-
     private boolean checkReady() {
         if (mMap == null) {
             Toast.makeText(this, R.string.map_not_ready, Toast.LENGTH_SHORT).show();
@@ -528,30 +575,59 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
     }
 
+
+
+    public void onPrevious(View view){
+        Log.i("previous",selectCarpark);
+        if(selectCarpark.equals("carpark1")) {
+            Intent intent = new Intent(MarkerDemoActivity.this, PreviousParking.class);
+            intent.putExtra("cpno",1);
+            startActivity(intent);
+        }else if(selectCarpark.equals("carpark2")){
+            Intent intent = new Intent(MarkerDemoActivity.this,PreviousParking.class);
+            intent.putExtra("cpno",2);
+            startActivity(intent);
+        }else if(selectCarpark.equals("carpark3")){
+            Intent intent = new Intent(MarkerDemoActivity.this,PreviousParking.class);
+            intent.putExtra("cpno",3);
+            startActivity(intent);
+        }else if(selectCarpark.equals("carpark4")){
+            Intent intent = new Intent(MarkerDemoActivity.this,PreviousParking.class);
+            intent.putExtra("cpno",4);
+            startActivity(intent);
+        }
+    }
+
+
+
     public void onArrive(View view){
         if(!checkReady()){
             return;
         }
         if(clickmark!=null){
+            mWhichCarpark.setValue(String.valueOf(clickmark.getTitle()));
             if(clickmark == mCarpark1){
-                Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+                Intent intent = new Intent(MarkerDemoActivity.this,insideparking3.class);
+                intent.putExtra("carparkno",1);
                 startActivity(intent);
                 Log.i("zhaohongtesss","1");
             }else if(clickmark == mCarpark2){
-                Intent intent = new Intent(MarkerDemoActivity.this,insideparking2.class);
+                Intent intent = new Intent(MarkerDemoActivity.this,insideparking3.class);
+                intent.putExtra("carparkno",2);
                 startActivity(intent);
                 Log.i("zhaohongtesss","2");
             }else if(clickmark == mCarpark3){
-                Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+                Intent intent = new Intent(MarkerDemoActivity.this,insideparking3.class);
+                intent.putExtra("carparkno",3);
                 startActivity(intent);
             }else if(clickmark == mCarpark4){
-                Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+                Intent intent = new Intent(MarkerDemoActivity.this,insideparking3.class);
+                intent.putExtra("carparkno",4);
                 startActivity(intent);
             }
         }
 
     }
-
 
     private String getDirectionsUrl(LatLng origin,LatLng dest){
 
@@ -719,16 +795,25 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             url = getDirectionsUrl(origin, dest);
             downloadTask = new DownloadTask();
             downloadTask.execute(url);
-            Log.i("zhaohong","here1");
         }else if(marker.equals(mCarpark2)){
             clickmark = mCarpark2;
             dest=carpark2;
             url = getDirectionsUrl(origin, dest);
             downloadTask = new DownloadTask();
             downloadTask.execute(url);
-            Log.i("zhaohong","here12");
+        }else if(marker.equals(mCarpark3)){
+            clickmark = mCarpark3;
+            dest=carpark3;
+            url = getDirectionsUrl(origin, dest);
+            downloadTask = new DownloadTask();
+            downloadTask.execute(url);
+        }else if(marker.equals(mCarpark4)){
+            clickmark = mCarpark4;
+            dest=carpark4;
+            url = getDirectionsUrl(origin, dest);
+            downloadTask = new DownloadTask();
+            downloadTask.execute(url);
         }
-
         // Markers have a z-index that is settable and gettable.
         float zIndex = marker.getZIndex() + 1.0f;
         marker.setZIndex(zIndex);
