@@ -25,6 +25,7 @@ import android.graphics.Canvas;
 import android.graphics.Color;
 import android.graphics.Typeface;
 import android.graphics.drawable.Drawable;
+import android.location.Location;
 import android.os.Bundle;
 import android.os.Handler;
 import android.os.SystemClock;
@@ -104,19 +105,22 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         OnInfoWindowCloseListener,*/
         OnMapAndViewReadyListener.OnGlobalLayoutAndMapReadyListener {
     //这里这里
-    FirebaseDatabase db = FirebaseDatabase.getInstance();
-    DatabaseReference mDocRef2 = db.getReference("java1dcarpark").child("currentLocation");
-    Map<String, Double> mCurrentMap;
-    DatabaseReference mDocConfig1 = db.getReference("java1dcarpark").child("carpark1Configure");
 
-    DatabaseReference mDocConfig2 = db.getReference("java1dcarpark").child("carpark2Configure");
+
+
 
     //到这里
     private static final LatLng carpark1 = new LatLng(1.333225, 103.959113);
 
     private static final LatLng carpark2 = new LatLng(1.336743, 103.964262);
 
+    private static final LatLng carpark3 = new LatLng(1.345637, 103.963486);
+
+    private static final LatLng carpark4 = new LatLng(1.343094, 103.965666);
+
     LatLng currentLocation = new LatLng(1.341195, 103.964157);;
+
+    Double park1,park2,park3,park4;
 
     class CustomInfoWindowAdapter implements InfoWindowAdapter {
 
@@ -197,10 +201,17 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     private Marker mCarpark2;
 
+    private Marker mCarpark3;
+
+    private Marker mCarpark4;
+
     private Marker mCurrent;
-    private Marker mCurrentnow;
+
+    private Marker bestcarpark;
+
 
     private Marker clickmark;
+
     ArrayList<LatLng> mmPoints;
 
     /**
@@ -214,10 +225,18 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     double currentLongitude;
     String carpark1info = "";
     String carpark2info = "";
+    String selectCarpark;
+
+    Location curLoc = new Location("currentLocation");
+    Location carpark1_location = new Location("carpark1");
+    Location carpark2_location = new Location("carpark2");
+    Location carpark3_location = new Location("carpark3");
+    Location carpark4_location = new Location("carpark4");
+    Double distance_1,distance_2,distance_3,distance_4;
 
     private final Random mRandom = new Random();
-
-
+    FirebaseDatabase db = FirebaseDatabase.getInstance();
+    DatabaseReference mWhichCarpark = db.getReference("java1dcarpark").child("selectCarpark");
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -228,6 +247,17 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference mDocRef = db.getReference("java1dcarpark").child("currentLocation");
         DatabaseReference mDocConfig1 = db.getReference("java1dcarpark").child("carpark1Configure");
+        DatabaseReference mWhichCarpark = db.getReference("java1dcarpark").child("selectCarpark");
+        mWhichCarpark.addListenerForSingleValueEvent(new ValueEventListener() {
+            @Override
+            public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
+                selectCarpark = dataSnapshot.getValue(String.class);
+            }
+
+            @Override
+            public void onCancelled(@NonNull DatabaseError databaseError) {
+            }
+        });
         mDocRef.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -243,6 +273,19 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                         .title("currentlocation")
                         .anchor(0.5f,0.5f)
                         .snippet("you are here"));
+                Double bestpark = Math.min(park1,park2);
+                //Log.i("zhhhhhhh",bestpark.toString());
+                if(bestpark == park1){
+
+                    Log.i("hhhhhhhh","1");
+                    bestcarpark = mCarpark1;
+                    bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+                }else {
+
+                    Log.i("hhhhhhhhh","2");
+                    bestcarpark = mCarpark2;
+                    bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+                }
 
             }
 
@@ -251,6 +294,9 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 Log.w("!!!READlocation", "FAIL", databaseError.toException());
             }
         });
+
+
+
         mDocConfig1.addValueEventListener(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
@@ -261,6 +307,11 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count1)+"/"+price1);
                 carpark1info = "Vacancy: "+count1+"/20"+"\n"+"price: "+price1;
                 mCarpark1.setSnippet("Vacancy: "+count1+"/20"+"\n"+"price: "+price1);
+                park1 = (double)Integer.parseInt(count1)/20+Integer.parseInt(price1)+distance_1*100;
+                Log.i("zhaohongeeee",park1.toString());
+                /*Log.i("zhaohongtessss"," "+count1+" "+price1);
+                Log.i("zhaohongTtttttt",distance_1.toString());
+                */
             }
 
             @Override
@@ -268,8 +319,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 Log.w("!!!READcount", "FAIL", databaseError.toException());
             }
         });
-
-
         DatabaseReference mDocConfig2 = db.getReference("java1dcarpark").child("carpark2Configure");
 
         mDocConfig2.addValueEventListener(new ValueEventListener() {
@@ -282,6 +331,8 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count2)+"/"+price2);
                 carpark2info = "Vacancy: "+count2+"/20"+"\n"+"price: "+price2;
                 mCarpark2.setSnippet("Vacancy: "+count2+"/20"+"\n"+"price: "+price2);
+                park2 = (double)Integer.parseInt(count2)/20+Integer.parseInt(price2)+distance_2*100;
+                Log.i("zhohhhhh",park2.toString());
             }
 
             @Override
@@ -311,12 +362,15 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     @Override
     public void onMapReady(GoogleMap map) {
+        //Log.i("llllhhhh",park1.toString());
+
         mMap = map;
         // Hide the zoom controls as the button panel will cover it.
         mMap.getUiSettings().setZoomControlsEnabled(false);
 
         // Add lots of markers to the map.
         addMarkersToMap();
+
 
         // Setting an info window adapter allows us to change the both the contents and look of the
         // info window.
@@ -362,7 +416,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
                 info.addView(title);
                 info.addView(snippet);
-
                 return info;
             }
         });
@@ -373,10 +426,32 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     // carpark1和carpark2改了一丢丢~~~
     private void addMarkersToMap() {
         // Uses a colored icon.
+        curLoc.setLatitude(currentLocation.latitude);
+        curLoc.setLongitude(currentLocation.longitude);
+
+
+        carpark1_location.setLatitude(carpark1.latitude);
+        carpark1_location.setLongitude(carpark1.longitude);
+        distance_1 = (carpark1_location.distanceTo(curLoc))* 0.000621371 ;
+
+        carpark2_location.setLatitude(carpark2.latitude);
+        carpark2_location.setLongitude(carpark2.longitude);
+        distance_2 = (carpark2_location.distanceTo(curLoc))* 0.000621371 ;
+
+
+        carpark3_location.setLatitude(carpark3.latitude);
+        carpark3_location.setLongitude(carpark3.longitude);
+        distance_3 = (carpark3_location.distanceTo(curLoc))* 0.000621371 ;
+
+
+        carpark4_location.setLatitude(carpark4.latitude);
+        carpark4_location.setLongitude(carpark4.longitude);
+        distance_4 = (carpark4_location.distanceTo(curLoc))* 0.000621371 ;
+
         mCarpark1 = mMap.addMarker(new MarkerOptions()
                 .position(carpark1)
                 .title("carpark1")
-                .snippet(carpark1info)
+                .snippet(Double.toString(distance_1)+"miles"+"\n"+carpark1info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         // Uses a custom icon with the info window popping out of the center of the icon.
@@ -385,7 +460,19 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         mCarpark2 = mMap.addMarker(new MarkerOptions()
                 .position(carpark2)
                 .title("carpark2")
-                .snippet(carpark2info)
+                .snippet(Double.toString(distance_2)+"miles"+"\n"+carpark2info)
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
+        mCarpark3 = mMap.addMarker(new MarkerOptions()
+                .position(carpark3)
+                .title("carpark3")
+                .snippet(Double.toString(distance_3)+"miles"+"\n"+"avaliable slot 4/20")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
+        mCarpark4 = mMap.addMarker(new MarkerOptions()
+                .position(carpark4)
+                .title("carpark4")
+                .snippet(Double.toString(distance_4)+"miles"+"\n"+"avaliable slot 4/20")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mCurrent = mMap.addMarker(new MarkerOptions()
@@ -393,9 +480,14 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 .title("currentlocation")
                 .anchor(0.5f,0.5f)
                 .snippet("you are here"));
-
-
-
+        //bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+        //Log.i("zhaohongtess",park1.toString());
+        /*if(park1<park2){
+            mCarpark1.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+        }else {
+            mCarpark2.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+        }*/
+        //Log.i("zhaohongtesss",parkdata1.toString());
     }
 
     /**
@@ -437,6 +529,12 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         // Clear the map because we don't want duplicates of the markers.
         mMap.clear();
         addMarkersToMap();
+        if(park2>park1){
+            bestcarpark = mCarpark1;
+        }else {
+            bestcarpark = mCarpark2;
+        }
+        bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
     }
 
     public void onArrive(View view){
@@ -444,10 +542,38 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             return;
         }
         if(clickmark!=null){
-            Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
-            Log.i("zh","button3");
-            startActivity(intent);
+            mWhichCarpark.setValue(String.valueOf(clickmark.getTitle()));
+            if(clickmark == mCarpark1){
+                Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+                startActivity(intent);
+                Log.i("zhaohongtesss","1");
+            }else if(clickmark == mCarpark2){
+                Intent intent = new Intent(MarkerDemoActivity.this,insideparking2.class);
+                startActivity(intent);
+                Log.i("zhaohongtesss","2");
+            }else if(clickmark == mCarpark3){
+                Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+                startActivity(intent);
+            }else if(clickmark == mCarpark4){
+                Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+                startActivity(intent);
+            }
+        }
 
+    }
+    public void onPrevious(View view){
+        if(selectCarpark.equals("carpark1")) {
+            Intent intent = new Intent(MarkerDemoActivity.this, Insideparking.class);
+            startActivity(intent);
+        }else if(selectCarpark.equals("carpark2")){
+            Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+            startActivity(intent);
+        }else if(selectCarpark.equals("carpark3")){
+            Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+            startActivity(intent);
+        }else if(selectCarpark.equals("carpark4")){
+            Intent intent = new Intent(MarkerDemoActivity.this,Insideparking.class);
+            startActivity(intent);
         }
 
     }
@@ -605,30 +731,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             mMap.addPolyline(lineOptions);
         }
     }
-    //@Override
-    //public void onProgressChanged(SeekBar seekBar, int progress, boolean fromUser) {
-    //    if (!checkReady()) {
-    //        return;
-    //    }
-    //    float rotation = seekBar.getProgress();
-    //    for (Marker marker : mMarkerRainbow) {
-    //        marker.setRotation(rotation);
-    //    }
-    //}
-
-    /*@Override
-    public void onStartTrackingTouch(SeekBar seekBar) {
-        // Do nothing.
-    }
-
-    @Override
-    public void onStopTrackingTouch(SeekBar seekBar) {
-        // Do nothing.
-    }*/
-
-    //
-    // Marker related listeners.
-    //
 
     @Override
     public boolean onMarkerClick(final Marker marker) {
@@ -665,8 +767,5 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         // marker is centered and for the marker's info window to open, if it has one).
         return false;
     }
-
-
-
 
 }

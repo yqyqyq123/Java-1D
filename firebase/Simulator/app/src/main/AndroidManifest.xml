@@ -59,6 +59,15 @@
             android:parentActivityName=".SetCarParkConfiguration"
             android:label=" Edit Car Park 2 Configuration ">
         </activity>
+        <activity android:name=".EditCarPark3Configuration"
+            android:parentActivityName=".SetCarParkConfiguration"
+            android:label="Edit Car Park 3 Configuration">
+        </activity>
+        <activity android:name=".EditCarPark4Configuration"
+            android:parentActivityName=".SetCarParkConfiguration"
+            android:label="Edit Car Park 4 Configuration">
+        </activity>
+
     </application>
 
 </manifest>

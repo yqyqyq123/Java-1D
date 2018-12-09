@@ -22,10 +22,7 @@ import android.view.ViewTreeObserver;
 import android.view.LayoutInflater;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.FrameLayout;
-import android.widget.Toast;
 
-import com.google.android.gms.tasks.OnFailureListener;
-import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
 import com.google.firebase.database.DatabaseReference;
@@ -39,13 +36,13 @@ import java.util.List;
 import java.util.Map;
 import java.util.stream.Collectors;
 
-//这一页……我改了挺多的……可能就最后几个function完全没碰过
-public class Insideparking extends AppCompatActivity {
-
-
+public class insideparking2 extends AppCompatActivity{
+    FirebaseDatabase db = FirebaseDatabase.getInstance();
+    DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark2Configure");
+    //DatabaseReference selectRef = db.getReference("java1dcarpark").child("carpark1Configure").child("carpark1Config");
     Map<String, Integer> insideConfig = new HashMap<>();
     //public Integer[] mark = {1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1};
-     //= new ArrayList<>(Arrays.asList(mark));
+    //= new ArrayList<>(Arrays.asList(mark));
     Map<String, Integer> selectDataMap = new HashMap<>();
     ArrayList<Integer> marktest = new ArrayList<>();
     String count1;
@@ -57,14 +54,13 @@ public class Insideparking extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.insidepark);
+        setContentView(R.layout.insidepark2);
         Intent intent = getIntent();
 
 
-
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        final DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark1Configure");
-        final DatabaseReference mWhichslot = db.getReference("java1dcarpark").child("selectSlot1");
+        final DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark2Configure");
+        final DatabaseReference mWhichslot = db.getReference("java1dcarpark").child("selectSlot2");
         //final DatabaseReference selectRef = db.getReference("java1dcarpark").child("carpark1Configure").child("carpark1Config");
 
         //configRef.addListenerForSingleValueEvent(new ValueEventListener() {
@@ -77,13 +73,14 @@ public class Insideparking extends AppCompatActivity {
                 //String count2 = String.valueOf(countMap.get("carpark2Count"));
 
 
-                ArrayList<Long> configDataList = (ArrayList<Long>)configDataMap.get("carpark1Config");
+                ArrayList<Long> configDataList = (ArrayList<Long>)configDataMap.get("carpark2Config");
 
                 //ArrayList<Integer> configDataPlz = new ArrayList<>();
                 for(int i = 0; i<20; i++){
                     //String tmp = String.valueOf(configDataList.get(i+1));
 
                     marktest.add(Integer.valueOf(String.valueOf(configDataList.get(i+1))));
+                    Log.i("testtt",String.valueOf(configDataList.get(i+1)));
                 }
                 //stockArr = stockList.toArray(stockArr);
                 Log.d("!!!!!!!!!!!!!!config","Value"+marktest);
@@ -105,19 +102,18 @@ public class Insideparking extends AppCompatActivity {
                             int absoluteX = coords[0];
                             int absoluteY = coords[1];
                             mWhichslot.setValue(String.valueOf(selectbutton.getText()));
-
                             if(selectbutton==(Button)findViewById(R.id.buttonSlot1)||selectbutton==(Button)findViewById(R.id.buttonSlot2)||selectbutton==(Button)findViewById(R.id.buttonSlot4)||selectbutton==(Button)findViewById(R.id.buttonSlot6)||selectbutton==(Button)findViewById(R.id.buttonSlot7)||selectbutton==(Button)findViewById(R.id.buttonSlot9)||selectbutton==(Button)findViewById(R.id.buttonSlot11)||selectbutton==(Button)findViewById(R.id.buttonSlot13)||selectbutton==(Button)findViewById(R.id.buttonSlot16)||selectbutton==(Button)findViewById(R.id.buttonSlot18)){
-                                LayoutInflater inflater = LayoutInflater.from(Insideparking.this);
-                                View vw = inflater.inflate(R.layout.insidepark, null);
-                                Intent intent = new Intent(Insideparking.this, DrawPath.class);
+                                LayoutInflater inflater = LayoutInflater.from(insideparking2.this);
+                                View vw = inflater.inflate(R.layout.insidepark2, null);
+                                Intent intent = new Intent(insideparking2.this, DrawPath2.class);
                                 intent.putExtra("x",absoluteX+selectbutton.getWidth()/2);
                                 intent.putExtra("y",absoluteY+selectbutton.getHeight()/2+30);
                                 Log.i("zhaohong",Integer.toString(absoluteX)+Integer.toString(absoluteY));
                                 startActivity(intent);
                             }else {
-                                LayoutInflater inflater = LayoutInflater.from(Insideparking.this);
-                                View vw = inflater.inflate(R.layout.insidepark, null);
-                                Intent intent = new Intent(Insideparking.this, DrawPath.class);
+                                LayoutInflater inflater = LayoutInflater.from(insideparking2.this);
+                                View vw = inflater.inflate(R.layout.insidepark2, null);
+                                Intent intent = new Intent(insideparking2.this, DrawPath2.class);
                                 intent.putExtra("x",absoluteX+selectbutton.getWidth()/2);
                                 intent.putExtra("y",absoluteY-selectbutton.getHeight()/2-30);
                                 Log.i("zhaohong",Integer.toString(absoluteX)+Integer.toString(absoluteY));
@@ -200,7 +196,6 @@ public class Insideparking extends AppCompatActivity {
         }
         selectbutton = button;
         selectbutton.setBackgroundResource(R.drawable.button_mycar);
-
     }
     public void addonclick(){
         for(int i=0;i<buttons.length;i++){
@@ -243,7 +238,7 @@ public class Insideparking extends AppCompatActivity {
     public void getcorrdinate(){
         if(selectbutton!=null){
             final ViewTreeObserver vto = selectbutton.getViewTreeObserver();
-            vto.addOnGlobalLayoutListener(new OnGlobalLayoutListener() {
+            vto.addOnGlobalLayoutListener(new ViewTreeObserver.OnGlobalLayoutListener() {
                 @Override
                 public void onGlobalLayout() {
                     selectbutton.getViewTreeObserver().removeGlobalOnLayoutListener(this);
@@ -262,6 +257,4 @@ public class Insideparking extends AppCompatActivity {
 
 
 }
-
-
 

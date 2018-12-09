@@ -9,6 +9,7 @@ import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.android.gms.maps.GoogleMap;
 import com.google.android.gms.maps.model.LatLng;
@@ -23,6 +24,7 @@ import java.util.ArrayList;
 import javax.annotation.Nullable;
 
 public class MainActivity1stpage extends AppCompatActivity {
+    TextView sup;
 
 
     @Override
@@ -34,8 +36,8 @@ public class MainActivity1stpage extends AppCompatActivity {
         setSupportActionBar(toolbar);
 
 
-        Button button2 = (Button) findViewById(R.id.buttonStart);
-        button2.setOnClickListener(new View.OnClickListener() {
+        sup = (TextView) findViewById(R.id.sup);
+        sup.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 Intent intent = new Intent(MainActivity1stpage. this , MarkerDemoActivity.class);

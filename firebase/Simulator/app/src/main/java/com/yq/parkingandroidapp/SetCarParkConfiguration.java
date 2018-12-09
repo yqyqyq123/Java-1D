@@ -14,6 +14,10 @@ public class SetCarParkConfiguration extends AppCompatActivity {
 
     Button buttonCarPark1;
     Button buttonCarPark2;
+    Button buttonCarPark3;
+    Button buttonCarPark4;
+    Button buttonCarPark5;
+
 
 
     @Override
@@ -44,6 +48,29 @@ public class SetCarParkConfiguration extends AppCompatActivity {
                 startActivity(intent);
             }
         });
+
+        buttonCarPark3 = findViewById(R.id.buttonCarPark3);
+        buttonCarPark3.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetCarParkConfiguration.this , EditCarPark3Configuration.class);//links MainActivity to SubActivity
+                //the "back" arrow appears on the SubActivity because SubActivity is tied to MainActivity  in the Manifest Page
+                startActivity(intent);
+            }
+        });
+
+        buttonCarPark4 = findViewById(R.id.buttonCarPark4);
+        buttonCarPark4.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View v) {
+                Intent intent = new Intent(SetCarParkConfiguration.this , EditCarPark4Configuration.class);//links MainActivity to SubActivity
+                //the "back" arrow appears on the SubActivity because SubActivity is tied to MainActivity  in the Manifest Page
+                startActivity(intent);
+            }
+        });
+
+
+
     }
 
 

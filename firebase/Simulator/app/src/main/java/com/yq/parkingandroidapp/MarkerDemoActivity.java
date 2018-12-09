@@ -103,6 +103,10 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     private static final LatLng carpark2 = new LatLng(1.336743, 103.964262);
 
+    private static final LatLng carpark3 = new LatLng(1.345637, 103.963486);
+
+    private static final LatLng carpark4 = new LatLng(1.343094, 103.965666);
+
     LatLng currentLocation = new LatLng(1.341195, 103.964157);
 
 
@@ -154,7 +158,11 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 badge = R.drawable.parking_icon;
             } else if (marker.equals(mCarpark2)) {
                 badge = R.drawable.parking_icon;
-            } else if (marker.equals(mCurrent)) {
+            }else if (marker.equals(mCarpark3)) {
+                badge = R.drawable.parking_icon;
+            }else if (marker.equals(mCarpark4)) {
+                badge = R.drawable.parking_icon;
+            }else if (marker.equals(mCurrent)) {
                 badge = R.drawable.arrow;
             } else {
                 // Passing 0 to setImageResource will clear the image view.
@@ -192,6 +200,10 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     private Marker mCarpark1;
 
     private Marker mCarpark2;
+
+    private Marker mCarpark3;
+
+    private Marker mCarpark4;
 
     private Marker mCurrent;
     ArrayList<LatLng> mmPoints;
@@ -321,6 +333,17 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         mCarpark2 = mMap.addMarker(new MarkerOptions()
                 .position(carpark2)
                 .title("carpark2")
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
+        mCarpark3 = mMap.addMarker(new MarkerOptions()
+                .position(carpark3)
+                .title("carpark3")
+
+                .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
+
+        mCarpark4 = mMap.addMarker(new MarkerOptions()
+                .position(carpark4)
+                .title("carpark4")
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
 
