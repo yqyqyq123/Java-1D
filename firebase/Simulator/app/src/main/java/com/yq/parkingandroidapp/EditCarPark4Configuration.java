@@ -19,32 +19,34 @@ import com.google.android.gms.tasks.OnFailureListener;
 import com.google.android.gms.tasks.OnSuccessListener;
 import com.google.firebase.database.DatabaseReference;
 import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.firestore.DocumentReference;
-import com.google.firebase.firestore.FirebaseFirestore;
 
 import java.util.HashMap;
 import java.util.Map;
 
-public class EditCarPark2Configuration extends AppCompatActivity {
+public class EditCarPark4Configuration extends AppCompatActivity {
+    int count4 = 0;
 
-    int count2 = 0;
     FirebaseDatabase db = FirebaseDatabase.getInstance();
-    DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark2Configure");
+    DatabaseReference config4Ref = db.getReference("java1dcarpark").child("carpark4Configure");
 
-    Map<String,Integer> carparkConfig2 = new HashMap<>();
-    EditText price2Text;
+    Map<String, Integer> carparkConfig4 = new HashMap<>();
+    //int[] carparkConfig4 = {1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1,1};
+    EditText price4Text;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.edit_car_park_2_configuration);
+        setContentView(R.layout.edit_car_park_4_configuration);
         FirebaseDatabase db = FirebaseDatabase.getInstance();
-        DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark2Configure");
+        DatabaseReference config4Ref = db.getReference("java1dcarpark").child("carpark4Configure");
 
+        final EditText price4Text = (EditText) findViewById(R.id.price4);
 
-        for(int i = 1; i < 21; i++){
-            carparkConfig2.put(Integer.toString(i), 1);
+        for(int i = 1; i < 17; i++){
+            carparkConfig4.put(Integer.toString(i),1);
         }
-        final EditText price2Text = (EditText) findViewById(R.id.price2);
+
+
         Toolbar toolbar = findViewById(R.id.toolbar);
         setSupportActionBar(toolbar);
         getSupportActionBar().setDisplayHomeAsUpEnabled(true);
@@ -67,20 +69,18 @@ public class EditCarPark2Configuration extends AppCompatActivity {
         final Button buttonSlot14 = findViewById(R.id.buttonSlot14);
         final Button buttonSlot15 = findViewById(R.id.buttonSlot15);
         final Button buttonSlot16 = findViewById(R.id.buttonSlot16);
-        final Button buttonSlot17 = findViewById(R.id.buttonSlot17);
-        final Button buttonSlot18 = findViewById(R.id.buttonSlot18);
-        final Button buttonSlot19 = findViewById(R.id.buttonSlot19);
-        final Button buttonSlot20 = findViewById(R.id.buttonSlot20);
-        final Button buttonResetConfig = findViewById(R.id.buttonResetConfig2);
+        final Button buttonResetConfig = findViewById(R.id.buttonResetConfig);
+
+
 
         buttonSlot1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
                 buttonSlot1.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 1 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("1",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 1 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("1",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
 
         });
@@ -89,10 +89,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot2.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 2 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("2",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 2 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("2",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -100,10 +100,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot3.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 3 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("3",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 3 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("3",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "16");
             }
         });
 
@@ -111,10 +111,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot4.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 4 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("4",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 4 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("4",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -122,10 +122,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot5.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 5 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("5",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 5 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("5",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -133,10 +133,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot6.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 6 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("6",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 6 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("6",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -144,10 +144,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot7.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 7 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("7",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 7 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("7",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -155,10 +155,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot8.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 8 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("8",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 8 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("8",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -166,10 +166,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot9.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 9 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("9",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 9 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("9",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -177,10 +177,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot10.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 10 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("10",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 10 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("10",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -188,10 +188,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot11.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 11 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("11",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 11 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("11",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
 
         });
@@ -200,10 +200,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot12.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 12 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("12",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 12 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("12",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -211,10 +211,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot13.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 13 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("13",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 13 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("13",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -222,10 +222,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot14.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 14 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("14",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 14 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("14",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -233,10 +233,10 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot15.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 15 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("15",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 15 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("15",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
@@ -244,61 +244,18 @@ public class EditCarPark2Configuration extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 buttonSlot16.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 16 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("16",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
+                Toast.makeText(EditCarPark4Configuration.this,"Slot 16 Selected", Toast.LENGTH_SHORT).show();
+                count4 += 1;
+                carparkConfig4.put("16",0);
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4) + "/16");
             }
         });
 
-        buttonSlot17.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonSlot17.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 17 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("17",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
-            }
-        });
-
-        buttonSlot18.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonSlot18.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 18 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("18",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
-            }
-        });
-
-        buttonSlot19.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonSlot19.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 19 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("19",0);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
-            }
-        });
-
-        buttonSlot20.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                buttonSlot20.setBackgroundResource(R.drawable.button_selector);
-                Toast.makeText(EditCarPark2Configuration.this,"Slot 20 Selected", Toast.LENGTH_SHORT).show();
-                count2 += 1;
-                carparkConfig2.put("20",1);
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2) + "/20");
-            }
-        });
 
         buttonResetConfig.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Toast.makeText(EditCarPark2Configuration.this,"Reseting...", Toast.LENGTH_SHORT).show();
+                Toast.makeText(EditCarPark4Configuration.this,"Reseting...", Toast.LENGTH_SHORT).show();
                 buttonSlot1.setBackgroundResource(R.drawable.button_unselector);
                 buttonSlot2.setBackgroundResource(R.drawable.button_unselector);
                 buttonSlot3.setBackgroundResource(R.drawable.button_unselector);
@@ -315,16 +272,13 @@ public class EditCarPark2Configuration extends AppCompatActivity {
                 buttonSlot14.setBackgroundResource(R.drawable.button_unselector);
                 buttonSlot15.setBackgroundResource(R.drawable.button_unselector);
                 buttonSlot16.setBackgroundResource(R.drawable.button_unselector);
-                buttonSlot17.setBackgroundResource(R.drawable.button_unselector);
-                buttonSlot18.setBackgroundResource(R.drawable.button_unselector);
-                buttonSlot19.setBackgroundResource(R.drawable.button_unselector);
-                buttonSlot20.setBackgroundResource(R.drawable.button_unselector);
-                count2 = 0;
-                for(int i = 0; i < 21; i++){
-                    carparkConfig2.put(Integer.toString(i), 1);
+
+                count4 = 0;
+                textViewCount.setText("Number of Vacancies = " + String.valueOf(count4));
+                for(int i = 1; i < 17; i++){
+                    carparkConfig4.put(Integer.toString(i),1);
                 }
-                textViewCount.setText("Number of Vacancies = " + String.valueOf(count2));
-                price2Text.setText(null);
+                price4Text.setText(null);
             }
 
         });
@@ -377,32 +331,32 @@ public class EditCarPark2Configuration extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    String getCount2(){
-        return "Number of Vacancies = " + String.valueOf(count2);
+    String getCount1(){
+        return "Number of Vacancies = " + String.valueOf(count4) + "/16";
     }
 
-    public void saveConfig2(View view) {
+    public void saveConfig4(View view) {
+        EditText price4Text = (EditText) findViewById(R.id.price4);
+        String price4 = price4Text.getText().toString();
+        String counts1 = Integer.toString(count4);
+        Map<String, Object> carpark4ConfigData = new HashMap<>();
+        carpark4ConfigData.put("carpark4Config", carparkConfig4);
+        carpark4ConfigData.put("carpark4Price", price4);
+        carpark4ConfigData.put("carpark4Count", counts1);
 
-        EditText price2Text = (EditText) findViewById(R.id.price2);
-        String price2 = price2Text.getText().toString();
-        String counts2 = Integer.toString(count2);
-        Map<String, Object> carpark2ConfigData = new HashMap<>();
-        carpark2ConfigData.put("carpark2Config", carparkConfig2);
-        carpark2ConfigData.put("carpark2Price", price2);
-        carpark2ConfigData.put("carpark2Count", count2);
 
-        configRef.setValue(carpark2ConfigData).addOnSuccessListener(new OnSuccessListener<Void>() {
+        config4Ref.setValue(carpark4ConfigData).addOnSuccessListener(new OnSuccessListener<Void>() {
             @Override
             public void onSuccess(Void aVoid) {
-                Log.d("carpark2ConfigData", "Carpark 2 config has been saved!");
-                Toast.makeText(EditCarPark2Configuration.this,"Configuration is saved",Toast.LENGTH_SHORT).show();
-                Intent intent = new Intent(EditCarPark2Configuration. this , SetCarParkConfiguration.class);
+                Log.d("carpark4ConfigData", "Carpark config4 has been saved!");
+                Toast.makeText(EditCarPark4Configuration.this,"Configuration is saved",Toast.LENGTH_SHORT).show();
+                Intent intent = new Intent(EditCarPark4Configuration. this , SetCarParkConfiguration.class);
                 startActivity(intent);
             }
         }).addOnFailureListener(new OnFailureListener() {
             @Override
             public void onFailure(@NonNull Exception e) {
-                Log.w("carpark2ConfigData", "Carpark 2 config was not saved!");
+                Log.w("carpark4ConfigData", "Carpark config4 was not saved!");
             }
         });
 

@@ -1,7 +1,6 @@
 package com.zhaohong.parkingandroidapp;
 
-import android.app.AlertDialog;
-import android.content.Intent;
+import android.app.Activity;
 import android.graphics.Bitmap;
 import android.graphics.Canvas;
 import android.graphics.Paint;
@@ -9,17 +8,13 @@ import android.graphics.Path;
 import android.graphics.Point;
 import android.graphics.drawable.BitmapDrawable;
 import android.os.Bundle;
-import android.app.Activity;
 import android.support.v7.app.AppCompatActivity;
-import android.view.LayoutInflater;
-import android.view.View;
-import android.widget.Button;
-import android.widget.LinearLayout;
 import android.util.Log;
 import android.view.Display;
-import java.io.ByteArrayInputStream;
+import android.widget.Button;
+import android.widget.LinearLayout;
 
-public class DrawPath extends AppCompatActivity {
+public class DrawPath2 extends AppCompatActivity {
     private LinearLayout linlay;
     private Bitmap background;
     private Canvas canvas;
@@ -31,7 +26,7 @@ public class DrawPath extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         //加了一个layout
-        setContentView(R.layout.drawpath);
+        setContentView(R.layout.drawpath2);
 
         Bundle extras = getIntent().getExtras();
         if (extras != null) {
@@ -64,7 +59,7 @@ public class DrawPath extends AppCompatActivity {
         painting.setStrokeWidth(10);
 
         Path path=new Path();
-        path.moveTo(1000,1500);
+        path.moveTo(1000,2500);
         path.lineTo(1000,y);
         path.moveTo(1000,y);
         path.lineTo(x,y);

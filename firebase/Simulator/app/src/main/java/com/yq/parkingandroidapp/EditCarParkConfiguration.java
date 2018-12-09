@@ -39,7 +39,7 @@ public class EditCarParkConfiguration extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.edit_car_park_3_configuration);
+        setContentView(R.layout.edit_car_park_1_configuration);
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark1Configure");
 
