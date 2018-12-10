@@ -208,6 +208,8 @@ public class MarkerDemoActivity extends AppCompatActivity implements
     ArrayList<LatLng> mmPoints;
 
     double bestpark;
+
+    Marker[] markers = {mCarpark1,mCarpark2,mCarpark3,mCarpark4};
     /**
      * Keeps track of the last selected marker (though it may no longer be selected).  This is
      * useful for refreshing the info window.
@@ -274,14 +276,18 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                         .title("currentlocation")
                         .anchor(0.5f,0.5f)
                         .snippet("you are here"));
-
-                if(bestpark == park1){
+                //bestcarpark = GetMin(parks,markers);
+                //bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+                if(park1<park1&&park1<park3&&park1<park4){
                     bestcarpark = mCarpark1;
-                    bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-                }else {
+                }else if(park2<park1&&park2<park3&&park2<park4){
                     bestcarpark = mCarpark2;
-                    bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
+                }else if(park3<park1&&park3<park2&&park3<park4){
+                    bestcarpark = mCarpark3;
+                }else {
+                    bestcarpark = mCarpark4;
                 }
+                bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
             }
 
             @Override
@@ -324,7 +330,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 carpark1info = Double.toString(distance_1)+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1;
                 mCarpark1.setSnippet(distance_1+"miles"+"\n"+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1);
                 park1 = (double)Integer.parseInt(count1)/20+Integer.parseInt(price1)+distance_1*100;
-                bestpark = park1;
                 Log.i("zhaohongeeee",park1.toString());
                 /*Log.i("zhaohongtessss"," "+count1+" "+price1);
                 Log.i("zhaohongTtttttt",distance_1.toString());
@@ -349,9 +354,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 carpark2info = Double.toString(distance_2)+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2;
                 mCarpark2.setSnippet(distance_2+"miles"+"\n"+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2);
                 park2 = (double)Integer.parseInt(count2)/20+Integer.parseInt(price2)+distance_2*100;
-                if(park2<bestpark){
-                    bestpark = park2;
-                }
                 Log.i("zhohhhhh",park2.toString());
             }
 
@@ -374,9 +376,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 carpark3info = Double.toString(distance_3)+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3;
                 mCarpark3.setSnippet(distance_3+"miles"+"\n"+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3);
                 park3 = (double)Integer.parseInt(count3)/20+Integer.parseInt(price3)+distance_3*100;
-                if(park3<bestpark){
-                    bestpark=park3;
-                }
             }
 
             @Override
@@ -567,11 +566,16 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         // Clear the map because we don't want duplicates of the markers.
         mMap.clear();
         addMarkersToMap();
-        if(park2>park1){
+        if(park1<park1&&park1<park3&&park1<park4){
             bestcarpark = mCarpark1;
-        }else {
+        }else if(park2<park1&&park2<park3&&park2<park4){
             bestcarpark = mCarpark2;
+        }else if(park3<park1&&park3<park2&&park3<park4){
+            bestcarpark = mCarpark3;
+        }else {
+            bestcarpark = mCarpark4;
         }
+        Log.i("parksss",Double.toString(park1)+" "+Double.toString(park2)+" "+Double.toString(park3)+" "+Double.toString(park4));
         bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
     }
 
@@ -595,6 +599,10 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             Intent intent = new Intent(MarkerDemoActivity.this,PreviousParking.class);
             intent.putExtra("cpno",4);
             startActivity(intent);
+        }else {
+            Toast.makeText(MarkerDemoActivity.this,
+                    "Haven't parking before",
+                    Toast.LENGTH_LONG).show();
         }
     }
 
@@ -625,8 +633,11 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 intent.putExtra("carparkno",4);
                 startActivity(intent);
             }
+        }else {
+            Toast.makeText(MarkerDemoActivity.this,
+                    "No carpark selected",
+                    Toast.LENGTH_LONG).show();
         }
-
     }
 
     private String getDirectionsUrl(LatLng origin,LatLng dest){
@@ -826,5 +837,15 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         // marker is centered and for the marker's info window to open, if it has one).
         return false;
     }
-
+    Marker GetMin(double [] parks, Marker[] markers){
+        double min = parks[0];
+        Marker out = markers[0];
+        for(int i=0;i<parks.length;i++){
+            if(parks[i]<min){
+                min = parks[i];
+                out = markers[i];
+            }
+        }
+        return out;
+    }
 }

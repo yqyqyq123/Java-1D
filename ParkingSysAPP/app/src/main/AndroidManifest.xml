@@ -50,14 +50,6 @@
             android:name=".MarkerDemoActivity"
             android:label="@string/marker_demo_label"/>
 
-        <activity android:name=".Insideparking"
-            android:label="insideparking"
-            android:parentActivityName=".MarkerDemoActivity"/>
-
-        <activity android:name=".insideparking2"
-            android:label="insideparking2"
-            android:parentActivityName=".MarkerDemoActivity"/>
-
         <activity android:name=".insideparking3"
             android:label="insideparking3"
             android:parentActivityName=".MarkerDemoActivity"/>
@@ -68,11 +60,8 @@
 
         <activity android:name=".DrawPath"
             android:label="pathexample"
-            android:parentActivityName=".Insideparking"/>
+            android:parentActivityName=".MarkerDemoActivity"/>
 
-        <activity android:name=".DrawPath2"
-            android:label="pathexample"
-            android:parentActivityName=".insideparking3"/>
 
         <meta-data
             android:name="com.google.android.geo.API_KEY"

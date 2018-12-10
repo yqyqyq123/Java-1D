@@ -12,6 +12,7 @@ import android.view.View;
 import android.view.ViewTreeObserver;
 import android.view.ViewTreeObserver.OnGlobalLayoutListener;
 import android.widget.Button;
+import android.widget.TextView;
 
 import com.google.firebase.database.DataSnapshot;
 import com.google.firebase.database.DatabaseError;
@@ -47,7 +48,12 @@ public class insideparking3 extends AppCompatActivity{
         setContentView(R.layout.insidepark);
         Intent intent = getIntent();
         int no;
+
         no = intent.getIntExtra("carparkno",0);
+
+        TextView page = findViewById(R.id.Whichcarpark);
+        page.setText("Carpark"+Integer.toString(no));
+
         Log.i("carparkk",Integer.toString(no));
         String configure = getSelectCarpark(no);
         Log.i("carparkk",configure);
@@ -103,16 +109,16 @@ public class insideparking3 extends AppCompatActivity{
                             int absoluteY = coords[1];
                             if(selectbutton==(Button)findViewById(R.id.buttonSlot1)||selectbutton==(Button)findViewById(R.id.buttonSlot2)||selectbutton==(Button)findViewById(R.id.buttonSlot4)||selectbutton==(Button)findViewById(R.id.buttonSlot6)||selectbutton==(Button)findViewById(R.id.buttonSlot7)||selectbutton==(Button)findViewById(R.id.buttonSlot9)){
                                 LayoutInflater inflater = LayoutInflater.from(insideparking3.this);
-                                View vw = inflater.inflate(R.layout.insidepark2, null);
-                                Intent intent = new Intent(insideparking3.this, DrawPath2.class);
+                                View vw = inflater.inflate(R.layout.insidepark, null);
+                                Intent intent = new Intent(insideparking3.this, DrawPath.class);
                                 intent.putExtra("x",absoluteX+selectbutton.getWidth()/2);
                                 intent.putExtra("y",absoluteY+selectbutton.getHeight()/2+30);
                                 Log.i("zhaohong",Integer.toString(absoluteX)+Integer.toString(absoluteY));
                                 startActivity(intent);
                             }else {
                                 LayoutInflater inflater = LayoutInflater.from(insideparking3.this);
-                                View vw = inflater.inflate(R.layout.insidepark2, null);
-                                Intent intent = new Intent(insideparking3.this, DrawPath2.class);
+                                View vw = inflater.inflate(R.layout.insidepark, null);
+                                Intent intent = new Intent(insideparking3.this, DrawPath.class);
                                 intent.putExtra("x",absoluteX+selectbutton.getWidth()/2);
                                 intent.putExtra("y",absoluteY-selectbutton.getHeight()/2-30);
                                 Log.i("zhaohong",Integer.toString(absoluteX)+Integer.toString(absoluteY));

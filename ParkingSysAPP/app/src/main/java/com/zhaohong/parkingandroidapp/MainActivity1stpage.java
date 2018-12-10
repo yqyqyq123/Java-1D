@@ -32,8 +32,8 @@ public class MainActivity1stpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.content_main_activity1stpage);
 
-        Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        //Toolbar toolbar = (Toolbar)findViewById(R.id.toolbar);
+        //setSupportActionBar(toolbar);
 
 
         sup = (TextView) findViewById(R.id.sup);

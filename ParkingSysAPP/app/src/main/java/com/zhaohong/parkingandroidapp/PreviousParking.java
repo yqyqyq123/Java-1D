@@ -8,6 +8,7 @@ import android.os.Bundle;
 import android.support.v7.app.AppCompatActivity;
 import android.util.Log;
 import android.widget.Button;
+import android.widget.TextView;
 
 public class PreviousParking extends AppCompatActivity {
     private final String sharedPrefFile = "com.example.android.mainsharedprefs";
@@ -25,8 +26,15 @@ public class PreviousParking extends AppCompatActivity {
 
         Intent intent = getIntent();
         int no = intent.getIntExtra("cpno",0);
+
+        TextView page = findViewById(R.id.Whichpage);
+        page.setText("Carpark"+Integer.toString(no));
+
         String KEY = getkey(no);
         Log.i("zhaohongprevious",Integer.toString(no));
+
+
+
         if(KEY=="Error"){
             new  AlertDialog.Builder(this)
                     .setMessage("Is Blocked" )

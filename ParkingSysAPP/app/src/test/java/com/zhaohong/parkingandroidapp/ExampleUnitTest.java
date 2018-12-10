@@ -1,4 +1,4 @@
-package com.chris.parkingandroidapp;
+package com.zhaohong.parkingandroidapp;
 
 import org.junit.Test;
 
