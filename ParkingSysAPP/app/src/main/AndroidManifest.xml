@@ -51,7 +51,7 @@
             android:label="@string/marker_demo_label"/>
 
         <activity android:name=".insideparking3"
-            android:label="insideparking3"
+            android:label="insideparking"
             android:parentActivityName=".MarkerDemoActivity"/>
 
         <activity android:name=".PreviousParking"

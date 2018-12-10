@@ -109,6 +109,20 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     DatabaseReference mDocConfig2 = db.getReference("java1dcarpark").child("carpark2Configure");
 
+
+    private String msg;
+    private ArrayList<Observer> observers;
+
+    public void register(Observer o){
+        observers.add(o);
+    }
+    public void unregister(Observer o){
+        observers.remove(o);
+    }
+    public void notifyregs(Observer o){
+        o.update(msg);
+    }
+
     //到这里
     private static final LatLng carpark1 = new LatLng(1.333225, 103.959113);
 
@@ -242,6 +256,8 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         super.onCreate(savedInstanceState);
         setContentView(R.layout.marker_demo);
 
+
+
         //这里这里 从这里开始
         //FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference mDocRef = db.getReference("java1dcarpark").child("currentLocation");
@@ -327,7 +343,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 String count1 = String.valueOf(countMap.get("carpark1Count"));
                 String price1 = String.valueOf(priceMap.get("carpark1Price"));
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count1)+"/"+price1);
-                carpark1info = Double.toString(distance_1)+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1;
+                carpark1info = Double.toString(distance_1)+"miles"+"\n"+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1;
                 mCarpark1.setSnippet(distance_1+"miles"+"\n"+"Vacancy: "+count1+"/20"+"\n"+"price: "+price1);
                 park1 = (double)Integer.parseInt(count1)/20+Integer.parseInt(price1)+distance_1*100;
                 Log.i("zhaohongeeee",park1.toString());
@@ -351,7 +367,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 String count2 = String.valueOf(countMap.get("carpark2Count"));
                 String price2 = String.valueOf(countMap.get("carpark2Price"));
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count2)+"/"+price2);
-                carpark2info = Double.toString(distance_2)+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2;
+                carpark2info = Double.toString(distance_2)+"miles"+"\n"+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2;
                 mCarpark2.setSnippet(distance_2+"miles"+"\n"+"Vacancy: "+count2+"/20"+"\n"+"price: "+price2);
                 park2 = (double)Integer.parseInt(count2)/20+Integer.parseInt(price2)+distance_2*100;
                 Log.i("zhohhhhh",park2.toString());
@@ -373,7 +389,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 String count3 = String.valueOf(countMap.get("carpark3Count"));
                 String price3 = String.valueOf(countMap.get("carpark3Price"));
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count3)+"/"+price3);
-                carpark3info = Double.toString(distance_3)+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3;
+                carpark3info = Double.toString(distance_3)+"miles"+"\n"+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3;
                 mCarpark3.setSnippet(distance_3+"miles"+"\n"+"Vacancy: "+count3+"/20"+"\n"+"price: "+price3);
                 park3 = (double)Integer.parseInt(count3)/20+Integer.parseInt(price3)+distance_3*100;
             }
@@ -394,7 +410,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                 String count4 = String.valueOf(countMap.get("carpark4Count"));
                 String price4 = String.valueOf(countMap.get("carpark4Price"));
                 Log.d("!!!!!!!!DATABASEVALUE","Count/price is: "+String.valueOf(count4)+"/"+price4);
-                carpark4info = Double.toString(distance_4)+"Vacancy: "+count4+"/20"+"\n"+"price: "+price4;
+                carpark4info = Double.toString(distance_4)+"miles"+"\n"+"Vacancy: "+count4+"/20"+"\n"+"price: "+price4;
                 mCarpark4.setSnippet(distance_4+"miles"+"\n"+"Vacancy: "+count4+"/20"+"\n"+"price: "+price4);
                 park4 = (double)Integer.parseInt(count4)/20+Integer.parseInt(price4)+distance_4*100;
                 if(park4<bestpark){
@@ -499,7 +515,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         mCarpark1 = mMap.addMarker(new MarkerOptions()
                 .position(carpark1)
                 .title("carpark1")
-                .snippet(Double.toString(distance_1)+"miles"+"\n"+carpark1info)
+                .snippet(carpark1info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
         // Uses a custom icon with the info window popping out of the center of the icon.
 
@@ -507,19 +523,19 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         mCarpark2 = mMap.addMarker(new MarkerOptions()
                 .position(carpark2)
                 .title("carpark2")
-                .snippet(Double.toString(distance_2)+"miles"+"\n"+carpark2info)
+                .snippet(carpark2info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mCarpark3 = mMap.addMarker(new MarkerOptions()
                 .position(carpark3)
                 .title("carpark3")
-                .snippet(Double.toString(distance_3)+"miles"+"\n"+carpark3info)
+                .snippet(carpark3info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mCarpark4 = mMap.addMarker(new MarkerOptions()
                 .position(carpark4)
                 .title("carpark4")
-                .snippet(Double.toString(distance_4)+"miles"+"\n"+carpark4info)
+                .snippet(carpark4info)
                 .icon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_AZURE)));
 
         mCurrent = mMap.addMarker(new MarkerOptions()

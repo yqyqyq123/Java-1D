@@ -24,7 +24,7 @@ import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
 
-public class insideparking3 extends AppCompatActivity{
+public class insideparking3 extends AppCompatActivity {
     FirebaseDatabase db = FirebaseDatabase.getInstance();
     //DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark1Configure");
     //DatabaseReference selectRef = db.getReference("java1dcarpark").child("carpark1Configure").child("carpark1Config");
@@ -41,6 +41,12 @@ public class insideparking3 extends AppCompatActivity{
     private final String sharedPrefFile = "com.example.android.mainsharedprefs";
     public static String KEY;
     SharedPreferences mPreferences;
+
+
+
+    public void update(String msg){
+    }
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -59,6 +65,7 @@ public class insideparking3 extends AppCompatActivity{
         Log.i("carparkk",configure);
         final String config = getCarparkConfig(no);
         Log.i("carparkk",config);
+
 
         mPreferences = getSharedPreferences(sharedPrefFile, MODE_PRIVATE);
 
@@ -142,12 +149,7 @@ public class insideparking3 extends AppCompatActivity{
                 Log.w("!!!READconfig", "FAIL", databaseError.toException());
             }
         });
-
-
-
     }
-
-    //public int[] mark = {1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1};
     ArrayList<Entry> entries = new ArrayList<>();
     public void addentry(ArrayList mark){
         for(int i=0; i<mark.size();i++){
