@@ -26,7 +26,6 @@ public class DrawPath extends AppCompatActivity {
     private int x;
     private int y;
 
-
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -76,6 +75,5 @@ public class DrawPath extends AppCompatActivity {
         // draw everything into linear layout
         linlay.setBackground(new BitmapDrawable(getResources(), background));
     }
-
 }
 

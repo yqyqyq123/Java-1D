@@ -109,20 +109,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     DatabaseReference mDocConfig2 = db.getReference("java1dcarpark").child("carpark2Configure");
 
-
-    private String msg;
-    private ArrayList<Observer> observers;
-
-    public void register(Observer o){
-        observers.add(o);
-    }
-    public void unregister(Observer o){
-        observers.remove(o);
-    }
-    public void notifyregs(Observer o){
-        o.update(msg);
-    }
-
     //到这里
     private static final LatLng carpark1 = new LatLng(1.333225, 103.959113);
 
@@ -141,10 +127,52 @@ public class MarkerDemoActivity extends AppCompatActivity implements
 
     double[] parks = {park1,park2,park3,park4};
 
-    class CustomInfoWindowAdapter implements InfoWindowAdapter {
 
-        // These are both viewgroups containing an ImageView with id "badge" and two TextViews with id
-        // "title" and "snippet".
+    private GoogleMap mMap;
+
+    private Marker mCarpark1;
+
+    private Marker mCarpark2;
+
+    private Marker mCarpark3;
+
+    private Marker mCarpark4;
+
+    private Marker mCurrent;
+
+    private Marker bestcarpark;
+
+    String selectCarpark;
+
+    private Marker clickmark;
+
+    ArrayList<LatLng> mmPoints;
+
+    double bestpark;
+
+    Marker[] markers = {mCarpark1,mCarpark2,mCarpark3,mCarpark4};
+    /**
+     * Keeps track of the last selected marker (though it may no longer be selected).  This is
+     * useful for refreshing the info window.
+     */
+    private Marker mLastSelectedMarker;
+    private RadioGroup mOptions;
+    //这四个double variable
+    double currentLatitude;
+    double currentLongitude;
+    String carpark1info = "";
+    String carpark2info = "";
+    String carpark3info = "";
+    String carpark4info = "";
+
+    Location curLoc = new Location("currentLocation");
+    Location carpark1_location = new Location("carpark1");
+    Location carpark2_location = new Location("carpark2");
+    Location carpark3_location = new Location("carpark3");
+    Location carpark4_location = new Location("carpark4");
+    Double distance_1,distance_2,distance_3,distance_4;
+
+    class CustomInfoWindowAdapter implements InfoWindowAdapter {
         private final View mWindow;
 
         private final View mContents;
@@ -199,56 +227,8 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             }
         }
     }
-    //above not important....
 
-    private GoogleMap mMap;
-
-    private Marker mCarpark1;
-
-    private Marker mCarpark2;
-
-    private Marker mCarpark3;
-
-    private Marker mCarpark4;
-
-    private Marker mCurrent;
-
-    private Marker bestcarpark;
-
-    String selectCarpark;
-
-    private Marker clickmark;
-
-    ArrayList<LatLng> mmPoints;
-
-    double bestpark;
-
-    Marker[] markers = {mCarpark1,mCarpark2,mCarpark3,mCarpark4};
-    /**
-     * Keeps track of the last selected marker (though it may no longer be selected).  This is
-     * useful for refreshing the info window.
-     */
-    private Marker mLastSelectedMarker;
-    private RadioGroup mOptions;
-    //这四个double variable
-    double currentLatitude;
-    double currentLongitude;
-    String carpark1info = "";
-    String carpark2info = "";
-    String carpark3info = "";
-    String carpark4info = "";
-
-    Location curLoc = new Location("currentLocation");
-    Location carpark1_location = new Location("carpark1");
-    Location carpark2_location = new Location("carpark2");
-    Location carpark3_location = new Location("carpark3");
-    Location carpark4_location = new Location("carpark4");
-    Double distance_1,distance_2,distance_3,distance_4;
-
-    private final Random mRandom = new Random();
-    //FirebaseDatabase db = FirebaseDatabase.getInstance();
     DatabaseReference mWhichCarpark = db.getReference("java1dcarpark").child("selectCarpark");
-
 
 
     @Override
@@ -257,9 +237,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
         setContentView(R.layout.marker_demo);
 
 
-
-        //这里这里 从这里开始
-        //FirebaseDatabase db = FirebaseDatabase.getInstance();
         DatabaseReference mDocRef = db.getReference("java1dcarpark").child("currentLocation");
         DatabaseReference mDocConfig1 = db.getReference("java1dcarpark").child("carpark1Configure");
         DatabaseReference mWhichCarpark = db.getReference("java1dcarpark").child("selectCarpark");
@@ -292,18 +269,6 @@ public class MarkerDemoActivity extends AppCompatActivity implements
                         .title("currentlocation")
                         .anchor(0.5f,0.5f)
                         .snippet("you are here"));
-                //bestcarpark = GetMin(parks,markers);
-                //bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
-                if(park1<park1&&park1<park3&&park1<park4){
-                    bestcarpark = mCarpark1;
-                }else if(park2<park1&&park2<park3&&park2<park4){
-                    bestcarpark = mCarpark2;
-                }else if(park3<park1&&park3<park2&&park3<park4){
-                    bestcarpark = mCarpark3;
-                }else {
-                    bestcarpark = mCarpark4;
-                }
-                bestcarpark.setIcon(BitmapDescriptorFactory.defaultMarker(BitmapDescriptorFactory.HUE_ORANGE));
             }
 
             @Override
@@ -437,7 +402,7 @@ public class MarkerDemoActivity extends AppCompatActivity implements
             }
         });
 
-        mmPoints = new ArrayList<LatLng>();
+        //mmPoints = new ArrayList<LatLng>();
 
         SupportMapFragment mapFragment =
                 (SupportMapFragment) getSupportFragmentManager().findFragmentById(R.id.map);

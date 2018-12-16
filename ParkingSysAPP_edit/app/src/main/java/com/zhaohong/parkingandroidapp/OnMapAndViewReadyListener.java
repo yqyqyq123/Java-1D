@@ -33,7 +33,6 @@ import com.google.android.gms.maps.SupportMapFragment;
  */
 public class OnMapAndViewReadyListener implements OnGlobalLayoutListener, OnMapReadyCallback {
 
-    /** A listener that needs to wait for both the GoogleMap and the View to be initialized. */
     public interface OnGlobalLayoutAndMapReadyListener {
         void onMapReady(GoogleMap googleMap);
     }

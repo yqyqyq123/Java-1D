@@ -1,6 +1,6 @@
 package com.zhaohong.parkingandroidapp;
 
-public class Entry{
+public abstract class Entry{
 
     private String entryID;
     private boolean locked;
@@ -12,7 +12,6 @@ public class Entry{
     public Entry(String id){
         this.entryID = id;
         this.locked = false;
-
     }
 
     /**
@@ -40,17 +39,14 @@ public class Entry{
      * Getter method for the locked variable
      * @return a boolean value that determines whether the entry is locked or not
      */
-    public boolean isLocked() {
-        return locked;
-    }
+    public abstract boolean isLocked();
 
-    /**
-     * Setter method for the locked variable
-     * @param locked
-     */
-    public void setLocked(boolean locked) {
+
+    /*public void setLocked(boolean locked) {
 
         this.locked = locked;
-    }
+    }*/
+
+    public abstract void setLocked();
 
 }

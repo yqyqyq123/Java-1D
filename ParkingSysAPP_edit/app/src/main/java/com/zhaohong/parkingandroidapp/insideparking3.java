@@ -26,8 +26,6 @@ import java.util.Map;
 
 public class insideparking3 extends AppCompatActivity {
     FirebaseDatabase db = FirebaseDatabase.getInstance();
-    //DatabaseReference configRef = db.getReference("java1dcarpark").child("carpark1Configure");
-    //DatabaseReference selectRef = db.getReference("java1dcarpark").child("carpark1Configure").child("carpark1Config");
     Map<String, Integer> insideConfig = new HashMap<>();
     //public Integer[] mark = {1,0,0,0,1,0,0,0,1,1,0,0,0,0,0,1,1,0,0,1};
     //= new ArrayList<>(Arrays.asList(mark));
@@ -71,16 +69,10 @@ public class insideparking3 extends AppCompatActivity {
 
         FirebaseDatabase db = FirebaseDatabase.getInstance();
         final DatabaseReference configRef = db.getReference("java1dcarpark").child(configure);
-        //final DatabaseReference selectRef = db.getReference("java1dcarpark").child("carpark1Configure").child("carpark1Config");
-
-        //configRef.addListenerForSingleValueEvent(new ValueEventListener() {
-
         configRef.addListenerForSingleValueEvent(new ValueEventListener() {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 Map<String, ArrayList<Long>> configDataMap = (Map)dataSnapshot.getValue();
-                //Map<String, String> priceMap = (Map) dataSnapshot.getValue();
-                //String count2 = String.valueOf(countMap.get("carpark2Count"));
 
 
                 ArrayList<Long> configDataList = (ArrayList<Long>)configDataMap.get(config);
@@ -94,9 +86,7 @@ public class insideparking3 extends AppCompatActivity {
                 }
                 //stockArr = stockList.toArray(stockArr);
                 Log.d("!!!!!!!!!!!!!!config","Value"+marktest);
-                Log.i("zhaohng", "here is fine1");
                 addentry(marktest);
-                Log.i("zhaohong","here333");
                 setBack();
                 Log.i("zhaohong","here 444");
                 addbuttons();
@@ -154,13 +144,14 @@ public class insideparking3 extends AppCompatActivity {
     public void addentry(ArrayList mark){
         for(int i=0; i<mark.size();i++){
             if(!mark.get(i).equals(0)){
-                Entry e = new Entry("buttonSlot"+Integer.toString(i+1));
-                e.setLocked(true);
+                Entry e = new LockedEntry("buttonSlot"+Integer.toString(i+1));
+                e.setLocked();
                 entries.add(e);
 
                 //Log.i("zhaohong",e.getEntryID());
             }else {
-                Entry e = new Entry("buttonSlot"+Integer.toString(i+1));
+                Entry e = new FreeEntry("buttonSlot"+Integer.toString(i+1));
+                e.setLocked();
                 entries.add(e);
             }
         }
@@ -177,6 +168,7 @@ public class insideparking3 extends AppCompatActivity {
                 button.setBackgroundResource(R.drawable.button_unselector);
 
             }else {
+                Log.i("!!!!!!","meishe");
                 String s = e.getEntryID();
                 Log.i("zhaohong",e.getEntryID()+"1");
                 int indentify= getResources().getIdentifier(s, "id", getPackageName());
@@ -185,7 +177,6 @@ public class insideparking3 extends AppCompatActivity {
             }
         }
     }
-
     public void addbuttons(){
         for(int i=0; i<entries.size();i++){
             String s = entries.get(i).getEntryID();
